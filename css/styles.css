@@ -7,7 +7,7 @@
 
 p{
   font-family: 'Lato', sans-serif;
-  font-size:  26px;
+  font-size:  18px;
 }
 h1{
   font-family: 'Lato', sans-serif;
@@ -53,7 +53,7 @@ h2{
 
 .informa{
 
-  color:white;
+  color:black;
   font-family: 'PT Sans', sans-serif;
   font-weight: 15px;
   font-size:  25px;
@@ -61,7 +61,7 @@ h2{
 
 }
 .saludos{
-  color:white;
+  color:black;
   font-family: 'Lato', sans-serif;
   font-size:  25px;
      ;
@@ -71,8 +71,10 @@ h2{
 
 li .active{background:  #ffffff;}
 
-header{ color: white ;
-background:black;}
+.cont{
+  background: white;
+  border-color:#FF0092;
+}
 
 
 .no-space{    padding-right:0px;
@@ -170,8 +172,33 @@ padding-left: 30px;}
 /* ---------------------------------------
 ----              empleoss         ----
 ----                                 ----
---------------------------------------- */ 
-.chamba{background: #141414; color:white; }
+--------------------------------------- */ .list{color: white;}
+.list2{color: black;}
+.logoempresa{
+  position: relative;
+  z-index: 99;
+}
+a .enlacbtn:link{
+    text-decoration:none;  
+}
+.enlacebtn{
+  position: relative;
+    top: 17px;
+      color: black;
+    background: none;
+    border: 1px solid black;
+    font-size: 15px;
+    padding: 7px 25px;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "HelveticaLTStd-Roman", Arial, sans-serif;
+    min-width: 120px;
+    text-transform: uppercase;
+    display: inline-block;
+      text-decoration:none;  
+}
+.chamba{border-color: #FF0092;  }
 .glyphicon-ok {color: #FF0092;}
 .ins{color: #736F66;}
 .tiempo{color: #228DFF; font-size: 25px;}
@@ -205,6 +232,7 @@ color: white;
     -ms-transform : scale(2); /* IE9 */
 
 }
+
 .imagen:hover >.manita-left{
   position: relative;
   z-index: 99;
@@ -245,18 +273,18 @@ color: white;
 
 
 footer{
-  background:#064780;
+  background:#363840;
   padding-top:  25px;
   color: #C5CFC6
   ; 
   height: 100%;
 }
-.glyphicon-road{color:   #3495c6;}
+.glyphicon-road{color:   yellow;}
 .glyphicon-heart{
-  color:  #A0C2DE;
+  color:  red;
 }
 .glyphicon-copyright-mark{
-  color: #7bc3ff;
+  color: white;
 }
 
 /*----------------------------*/
@@ -287,7 +315,23 @@ top: -30px;}
 
 
 }
-
+.enlacebtn{
+  position: relative;
+    top: 10px;
+      color: black;
+    background: none;
+    border: 1px solid black;
+    font-size: 15px;
+    padding: 7px 25px;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "HelveticaLTStd-Roman", Arial, sans-serif;
+    min-width: 120px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration:none;  
+}
 
 }
 .title-actividad{font-size: 15px;}

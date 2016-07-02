@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-Mx">
+<html lang="es-Mx" ng-app="empleos">
 <head>
 	 <title> cv aaron ......> </title>
 	<link rel="icon" type="image/png" href="img/faviicon.png" />
@@ -19,6 +19,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
 
 
 
@@ -32,8 +36,7 @@ $(document).ready(function(){
 </script>
   
 </head>
-<body >
-
+<body ng-controller="EmpresaController as empresa ">
 
 <nav class="navbar navbar-default">
 		
@@ -46,7 +49,7 @@ $(document).ready(function(){
 			          <span class="icon-bar"></span>
 			          <span class="icon-bar"></span>
 			      </button>
-	      			<a class="navbar-brand" href="index.html"><p class="my-name text-left">F. Aaron Castro  G</p></a>
+	      			<a class="navbar-brand" href="index.html"><p class="my-name text-center">F. Aaron Castro  G.</p></a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -105,234 +108,90 @@ $(document).ready(function(){
 
 </nav>
 
+	<section class="list-group-item container " ng-repeat="trabajo in  empresa.labore" >
+	 		<div class="img-wrap col-lg-4 text-center">
+            	<a href="{{trabajo.url}}"><img ng-src="{{trabajo.logo}}" class="img img-responsive img-thumbnail logoempresa"/></a>
+            	<p class="text-center">
+            	<a href="{{trabajo.url}} " class="btn {{trabajo.classenlace}}">{{trabajo.enlace}}</a></p>
+          	</div>
+         		 <div class="col-lg-8 ">
+				 <h3 class="text-center">Empresa:{{trabajo.nombre}}
+					        
+				</h3><hr class="	{{trabajo.nameclase}} ">
+					       <section class="tab " ng-controller="TabController as tab">
+										        <ul class="nav  nav-tabs">
+										          <li ng-class="{ active: tab.isSet(1) } ">
+										            <a href ng-click="tab.setTab(1)" class="{{trabajo.nav}}">Datos de la Empresa</a></li>
+										          <li ng-class="{ active: tab.isSet(2) }">
+										            <a href ng-click="tab.setTab(2)" class="{{trabajo.nav}}">Puesto Desempeñado</a></li>
+										          <li ng-class="{ active: tab.isSet(3) }">
+										            <a href ng-click="tab.setTab(3)" class="{{trabajo.nav}}">Actividades  Realizadas</a></li>
+										            <li ng-class="{ active: tab.isSet(4) }">
+										            <a href ng-click="tab.setTab(4)" class="{{trabajo.nav}}">Tecnologias </a></li>
+										        </ul>
+										        <div ng-show="tab.isSet(1)" >
+										          <h4>Datos de La Empresa {{trabajo.nombre}}</h4>
+										          <blockquote class="{{trabajo.nameclase}} text-justify"><h4 >
+										          	<ul >
+											          	<li>
+											          		Giro: {{trabajo.giro}}	
+											          	</li>
+											          	<li>
+											          			Ubicación: {{trabajo.lugar}}
+											          	</li>
+											          	<li>
+											          		Tel: {{trabajo.tel}}
+											          	</li>
+											          	<li>
+											          		Tiempo Laborado:  {{trabajo.tiempo}}
+											          	</li>
+										          	</ul>
+										          	
+										          						          	
+										          	
 
 
-	<section >
-	 	<div class="chamba">
-	<section class="container">
-				<div class="col-lg-12 ">
-					<h1 class="company text-center">	
-						Consorcio Laboro
-						
-					</h1>
-					<div class="col-lg-7">
-						<p class="tiempo text-left"> <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> &nbsp;<ins >  5 de Noviembre del 2015 - 20  de Febrero del 2016 </ins></p>
-					</div>
-					<div class="col-lg-5">
-						<p class="tiempo text-right"> <span class=" glyphicon glyphicon-folder-close" aria-hidden="true"></span> &nbsp;<ins >Desarrollador Web</ins></p>
-					</div>
-					
-						
+										          </h4></blockquote>
+										        </div>
+										        <div ng-show="tab.isSet(2)">
+										          <h4>Puesto Desempeñado</h4>
+										          <blockquote  class="{{trabajo.nameclase}} text-justify"> {{trabajo.puesto}}</blockquote>
+										        </div>
+										        <div ng-show="tab.isSet(3) " >
+										          <h4>Actividades Principales</h4>
+										          <blockquote  class="{{trabajo.nameclase}} text-justify">
+										          	
+										          	<ul class="list-group">
+										          		<li>
+										          			{{trabajo.actividaduno}}
+										          		</li>
+										          		<li>
+										          			{{trabajo.actividaddos}}
+										          		</li>
+										          		<li>
+										          			{{trabajo.actividadtres}}
+										          		</li>
+										          	</ul>
+										          </blockquote>
+										        </div>
+										         <div ng-show="tab.isSet(4) " >
+										          <h4>Tecnologias Ocupadas</h4>
+										          <blockquote  class="{{trabajo.nameclase}} text-justify"> {{trabajo.tecnologias}}</blockquote>
+										        </div>
+					      </section>
 
-						<p class="text-justify descripcion">  Funciones desempeñadas:
-						<br> <span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp;Modificaciones a los módulos de los sistemas de la compañía. También se desarrollaron soluciones para las nuevas necesidades de la empresa ..<br>
-						<br> <span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp;Sistema de sorteos: Donde se regalan beneficios para el personal que administra la empresa, (obteniendo la información de los registros de los usuarios de la base de datos) notificando a los ganadores vía correo y proporcionando un enlace para aceptar los términos y condiciones del sorteo (el cual se guarda en la base de datos para futuras certificaciones de ISO) aceptando los términos y condiciones se les enviará por correo un enlace para canjear su beneficio obtenido.   <br>
-							<br> <span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp;Campañas de mailing para: Servicios para clientes, prospectos de clientes y ex clientes con el objetivo de mantener, atraer, y retomar a los clientes.</p><br>
+				</div>		      
+	 </section>
+	 <br>
 
-				
-				</div>
-
-
-	</section>
-</div>
-<div class="">
-	<section class="container">
-				<div class="col-lg-12 ">
-					<h1 class="company text-center">	
-						Mampower
-						
-					</h1>
-					<div class="col-lg-7">
-						<p class="tiempo text-left"> <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> &nbsp;<ins >  1 de Octubre del 2015 - 3 de Noviembre del 2015</ins></p>
-					</div>
-					<div class="col-lg-5">
-						<p class="tiempo text-right"> <span class=" glyphicon glyphicon-folder-close" aria-hidden="true"></span> &nbsp;<ins >Soporte Técnico- Formula 1</ins></p>
-					</div>
-					
-						
-
-						<p class="text-justify descripcion">  Funciones desempeñadas:
-						<br> <span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp;Configuraciones de sistemas de puntos de ventas a servidores.<br>
-						<br> <span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp;Consultas de ventas en el servidor . <br>
-							<br> <span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp;Instalación de puntos de ventas a servidores de la red.</p> <br>
-
-				
-				</div>
-
-
-	</section>
-</div>
-
-
-
-
-
-<div class="chamba">
-	<section class="container chamba">
-		<div class="col-lg-12 chamba">
-					<h1 class="company text-center">	
-						Parroquia Nuestra Señora de la Anunciación
-						
-					</h1>
-					<div class="col-lg-8">
-						<p class="tiempo text-left"> <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> &nbsp;<ins >  1 de Septiembre  del 2015  - 25 de Septiembre del 2015</ins></p>
-					</div>
-					<div class="col-lg-4">
-						<p class="tiempo text-right"> <span class=" glyphicon glyphicon-folder-close" aria-hidden="true"></span> &nbsp;<ins >Desarrollo Web Freelance</ins></p>
-					</div>
-						</div>
-		<div class="col-lg-5 chamba">
-				<p class="text-justify descripcion">
-						Las carecteristicas principales de la  página  webweb:
-							<ul class="text-justify media-list">
-							<li>
-								<p class="description"> <span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp; Incluye  widgets  de google, facebook y twitter.</p>
-							</li>
-							<li>
-								<p class="description"><span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp; Contiene su propio gestor de contendio , administrado por la parroquia.</p>
-							</li>
-							<li>
-									<p class="description"><span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp; Permisos con la Arquidiocesis  de Tlalnepantla</p><br>
-							</li>
-							<li>
-									<p class="description"><span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp; Diseño responsivo.</p><br>
-							</li>
-
-								
-							</ul>
-				</p>
-			
-		</div>
-
-		<figure	class="col-lg-7 ">
-		<a href="http://parroquiaanunciacionechegaray.org.mx/" data-toggle="tooltip" class="imagen " title="Te invito a que conoscas la   página  web ">
-			<img src="img/empleos/pageechegaray.png" class=" img-responsive"alt="Parroquia de Echegaray" >
-			
-			<p class="text-center manita"><span class=" text-left glyphicon glyphicon-hand-up" aria-hidden="true"></span><p>
-				</a>
-		</figure	>
-		
-
-	</section>
-	
-</div>
-
-
-<div class="">
-	<section class="container">
-		<div class="col-lg-12 ">
-					<h1 class="company text-center">	
-						Parroquia Nuestra Señora de Lourdes
-						
-					</h1>
-					<div class="col-lg-7">
-						<p class="tiempo text-left"> <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> &nbsp;<ins >  1 de Junio  del 2015  - 20 de Junio del 2015</ins></p>
-					</div>
-					<div class="col-lg-5">
-						<p class="tiempo text-right"> <span class=" glyphicon glyphicon-folder-close" aria-hidden="true"></span> &nbsp;<ins >Desarrollo Web Freelance</ins></p>
-					</div>
-						</div>
-						<figure	class="col-lg-7 ">
-						<a href="#/" class="imagen "data-toggle="tooltip" title="Proximamente subiré el trabajo  realizado ,estoy realizando cambios ">
-							<img src="img/empleos/pagelourdes.png" class="img-responsive" alt="Parroquia de nuestra señora de lourdes">
-									<p class="text-center manita-left"><span class=" text-left glyphicon glyphicon-hand-up" aria-hidden="true"></span><p>
-							</a>
-						</figure	>
-						
-		
-		<div class="col-lg-5 ">
-				<p class="text-justify descripcion">
-						Las carecteristicas principales de la  página  webweb:
-							<ul class="text-justify media-list">
-							<li>
-								<p class="description"> <span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp;Incluye  widgets  de google</p>
-							</li>
-							<li>
-								<p class="description"> <span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp;Diseño de imagenes</p>
-							</li>
-							<li>
-									<p class="description"> <span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp;Permisos con la Arquidiocesis  de Tlalnepantla</p>
-							</li>
-
-							<li>
-									<p class="description"> <span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp;Diseño responsivo.</p><br>
-							</li>
-
-
-								
-							</ul>
-				</p>
-			
-		</div>
-
-		
-
-	</section>
-	
-</div>
-
-
-
-
-<div class="chamba">
-	<section class="container chamba">
-
-		<div class="col-lg-12 chamba">
-					<h1 class="company text-center">	
-						Ld Suministros Industriales
-						
-					</h1>
-					<div class="col-lg-7">
-						<p class="tiempo text-left"> <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> &nbsp;<ins >  1 de Abril del 2015  -  1 de Mayo  del 2015</ins></p>
-					</div>
-					<div class="col-lg-5">
-						<p class="tiempo text-right"> <span class=" glyphicon glyphicon-folder-close" aria-hidden="true"></span> &nbsp;<ins >Desarrollo Web Freelance</ins></p>
-					</div>
-						</div>
-		<div class="col-lg-5 chamba">
-				<p class="text-justify descripcion">
-						Las carecteristicas principales de la  página  webweb:
-							<ul class="text-justify media-list">
-							<li class="media-left">
-								<p class="description"> <span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp;Muestra El Catálogo De la Empresa.</p>
-							</li>
-							<li>
-								<p class="description"> <span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp;Se administro el contenio de las publicaciones en Facebook.</p>
-							</li>
-							
-							<li>
-									<p class="description"> <span class="glyphicon glyphicon-ok " aria-hidden="true"></span> &nbsp;Diseño responsivo.</p><br>
-							</li>
-
-								
-							</ul>
-				</p>
-			
-		</div>
-
-		<figure	class="col-lg-7 ">
-		<a href="http://ld.org.mx/" data-toggle="tooltip" class="imagen" title="Te invito a que conoscas la   página  web">
-			<img src="img/empleos/pageld.png" class="img-responsive" alt="Empresa ld Suministros Industriales">
-					<p class="text-center manita"><span class=" text-left glyphicon glyphicon-hand-up" aria-hidden="true"></span><p>
-					</a>
-
-		</figure	>
-		
-
-	</section>
-	
-</div>
-
-	</section>
-		<footer>
 		
 		<footer class="pie  ">
       	
      <div class="container">
-				<div class="col-lg-8 col-lg-offset-2">
+				<div class="col-lg-9 col-lg-offset-1">
 			
 						<p class="lead text-center lema">"Camina hacia el futuro" <span class="glyphicon glyphicon-road" aria-hidden="true"></span></p>  
-					  <p class="text-center italic">Hecho con <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> en México 2015  Todos los derechos reservados  <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> </p>
+					  <p class="text-center italic">Hecho con <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> en México 2015  Todos los derechos reservados    <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>  </p>
 						<br>
 					
 					
@@ -343,7 +202,7 @@ $(document).ready(function(){
 </footer>
 
 
-	</footer>
+	
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

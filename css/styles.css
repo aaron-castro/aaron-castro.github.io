@@ -43,7 +43,9 @@ h2{
   color: white;
 }
 
-
+.entrada{
+  background: #2A363B;
+color: white;}
 .hola{color:#f3036e;
   font-family: 'Lato', sans-serif;
   font-size:  35px;
@@ -53,7 +55,7 @@ h2{
 
 .informa{
 
-  color:black;
+  color:white;
   font-family: 'PT Sans', sans-serif;
   font-weight: 15px;
   font-size:  25px;
@@ -61,7 +63,7 @@ h2{
 
 }
 .saludos{
-  color:black;
+  color:white;
   font-family: 'Lato', sans-serif;
   font-size:  25px;
      ;
@@ -73,7 +75,7 @@ li .active{background:  #ffffff;}
 
 .cont{
   background: white;
-
+  border-color:#FF0092;
 }
 
 

@@ -19,7 +19,7 @@ app.controller('TabController', function(){
  {
  	nameclase:"",
  	nav:'list2',
- 	nombre:'Parroquia Anunciacion de Echegaray.',
+ 	nombre:'Freenlace-Parroquia Anunciacion de Echegaray.',
  	url:'http://parroquiaanunciacionechegaray.org.mx',
  	enlace:'Sitio Web Desarollado',
  	classenlace:'enlacebtn',
@@ -109,7 +109,7 @@ app.controller('TabController', function(){
 {
  	nameclase:" ",
  	nav:"list2",
- 	nombre:'Ld Suministros Industriales.',
+ 	nombre:'Freenlace-Ld Suministros Industriales.',
  	url:'http://ld.org.mx/',
  	enlace:'Sitio Web Desarollado',
  	classenlace:'enlacebtn',

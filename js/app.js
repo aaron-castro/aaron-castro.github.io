@@ -19,7 +19,7 @@ app.controller('TabController', function(){
  {
  	nameclase:"",
  	nav:'list2',
- 	nombre:'Frelance.',
+ 	nombre:'Freelance.',
  	url:'http://parroquiaanunciacionechegaray.org.mx',
  	enlace:'Sitio Web Desarollado',
  	classenlace:'enlacebtn',
@@ -109,7 +109,7 @@ app.controller('TabController', function(){
 {
  	nameclase:" ",
  	nav:"list2",
- 	nombre:'Frelance.',
+ 	nombre:'Freelance.',
  	url:'http://ld.org.mx/',
  	enlace:'Sitio Web Desarollado',
  	classenlace:'enlacebtn',

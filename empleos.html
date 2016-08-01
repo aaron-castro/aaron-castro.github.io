@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+<script src="https://use.fontawesome.com/your-embed-code.js"></script> 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	
@@ -24,21 +25,19 @@
     <script type="text/javascript" src="js/app.js"></script>
 
 
-
-
-
-	<script type="text/javascript">
+<script type="text/javascript">
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip({
-        placement : 'top'
-    });
+	$(".contacto").click(function(){
+		$("#myModal").modal('show');
+	});
 });
 </script>
+
   
 </head>
 <body ng-controller="EmpresaController as empresa ">
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
 		
   <div class="container-fluid ">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,16 +48,16 @@ $(document).ready(function(){
 			          <span class="icon-bar"></span>
 			          <span class="icon-bar"></span>
 			      </button>
-	      			<a class="navbar-brand" href="index.html"><p class="my-name text-center">F. Aaron Castro  G.</p></a>
+	      			<a class="navbar-brand" href="index.html"><p class="my-name text-left">Developer  Web Marley</p></a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="  collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <div class=" container  collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav  navbar-right">
 		        <li class=""><a href="index.html"><p class="text-center">Acerca De Mi <span class="sr-only">(current)</span></p></a></li>
-		        <li><a href="empleos.html"><p class="text-center">Portafolio de Trabajo</p></a></li>
+		        <li><a href="empleos.html"><p class="text-center">Vida laboral</p></a></li>
 		       <!-- <li><a href="#"><p class="text-center">Pasatiempo</p></a></li> -->
-		       <li>    <a href="#" class="btn aaron "  data-toggle="modal" data-target="#myModal"><p>Contacto</p></a></li>
+		       <li>    <a href="#" class="btn contacto "  ><p>Contacto</p></a></li>
 		         
 		       <li class=""><a href="files/cv-aaron.pdf"><p class="text-center">Cv </p></a></li>
 		       
@@ -69,44 +68,24 @@ $(document).ready(function(){
   </div><!-- /.container-fluid -->
       <!-- Button HTML (to Trigger Modal) -->
    <!-- Modal -->
-        <div id="myModal" class="modal fade ">
-			        <div class="modal-dialog ">
-					            <div class="modal-content ">
-						                <div class="modal-header">
-							                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							                    <h3 class="modal-title text-center my-name-dos"> F. Aaron Castro G</h3>
-							                    
-							                    <h4 class="text-center"> <span class=" text-left glyphicon glyphicon-check" aria-hidden="true"></span> Más puede el que quiere, que el que sabe</h4>
-						                </div>
-						                <div class="modal-body ">
-							                  <div class="table-responsive">
-									                        <table class="table  table-striped text-center">
-									                                <thead>
-										                                      <tr >
-										                                      
-										                                        <th ><p class="text-center format"> <span class=" text-left glyphicon glyphicon-phone" aria-hidden="true"></span>Telefono</p></th>
-										                                        <th ><p class="text-center fomat"><span class=" text-left glyphicon glyphicon-envelope" aria-hidden="true"></span> Mail</p></th>
-
-										                                      </tr>
-										                                </thead>
-									                                <tbody>
-										                                      <tr>
-										                                        <td><p class="format">55-45823081</p> </td>
-										                                        <td><p class="format">liyng23@gmail.com</p></td>
-										                                      
-										                                        </tr>
-									                                  
-									                                </tbody>
-									                      </table>
-							                      </div>
-						                </div>
-					   
-					            </div>
-				        </div>
-	   </div>
-  
-
+        
 </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<section class="list-group-item container " ng-repeat="trabajo in  empresa.labore" >
 	 		<div class="img-wrap col-lg-4 text-center">
@@ -115,83 +94,84 @@ $(document).ready(function(){
             	<a href="{{trabajo.url}} " class="btn {{trabajo.classenlace}}">{{trabajo.enlace}}</a></p>
           	</div>
          		 <div class="col-lg-8 ">
-				 <h3 class="text-center">Empresa:{{trabajo.nombre}}
-					        
-				</h3><hr class="	{{trabajo.nameclase}} ">
-					       <section class="tab " ng-controller="TabController as tab">
-										        <ul class="nav  nav-tabs">
-										          <li ng-class="{ active: tab.isSet(1) } ">
-										            <a href ng-click="tab.setTab(1)" class="{{trabajo.nav}}">Datos de la Empresa</a></li>
-										          <li ng-class="{ active: tab.isSet(2) }">
-										            <a href ng-click="tab.setTab(2)" class="{{trabajo.nav}}">Puesto Desempeñado</a></li>
-										          <li ng-class="{ active: tab.isSet(3) }">
-										            <a href ng-click="tab.setTab(3)" class="{{trabajo.nav}}">Actividades  Realizadas</a></li>
-										            <li ng-class="{ active: tab.isSet(4) }">
-										            <a href ng-click="tab.setTab(4)" class="{{trabajo.nav}}">Tecnologias </a></li>
-										        </ul>
-										        <div ng-show="tab.isSet(1)" >
-										          <h4>Datos de La Empresa {{trabajo.nombre}}</h4>
-										          <blockquote class="{{trabajo.nameclase}} text-justify"><h4 >
-										          	<ul >
-											          	<li>
-											          		Giro: {{trabajo.giro}}	
-											          	</li>
-											          	<li>
-											          			Ubicación: {{trabajo.lugar}}
-											          	</li>
-											          	<li>
-											          		Tel: {{trabajo.tel}}
-											          	</li>
-											          	<li>
-											          		Tiempo Laborado:  {{trabajo.tiempo}}
-											          	</li>
-										          	</ul>
-										          	
-										          						          	
-										          	
+							 <h3 class="text-center">Empresa:{{trabajo.nombre}}
+								        
+							</h3><hr class="	{{trabajo.nameclase}} ">
+								       <article class="tab " ng-controller="TabController as tab">
+													        <ul class="nav  nav-tabs">
+													          <li ng-class="{ active: tab.isSet(1) } ">
+													            <a href ng-click="tab.setTab(1)" class="{{trabajo.nav}}">Datos de la Empresa</a></li>
+													          <li ng-class="{ active: tab.isSet(2) }">
+													            <a href ng-click="tab.setTab(2)" class="{{trabajo.nav}}">Puesto Desempeñado</a></li>
+													          <li ng-class="{ active: tab.isSet(3) }">
+													            <a href ng-click="tab.setTab(3)" class="{{trabajo.nav}}">Actividades  Realizadas</a></li>
+													            <li ng-class="{ active: tab.isSet(4) }">
+													            <a href ng-click="tab.setTab(4)" class="{{trabajo.nav}}">Tecnologias </a></li>
+													        </ul>
+													        <div ng-show="tab.isSet(1)" >
+													          <h4>Datos de La Empresa {{trabajo.nombre}}</h4>
+													          <blockquote class="{{trabajo.nameclase}} text-justify"><h4 >
+													          	<ul >
+														          	<li>
+														          		Giro: {{trabajo.giro}}	
+														          	</li>
+														          	<li>
+														          			Ubicación: {{trabajo.lugar}}
+														          	</li>
+														          	<li>
+														          		Tel: {{trabajo.tel}}
+														          	</li>
+														          	<li>
+														          		Tiempo Laborado:  {{trabajo.tiempo}}
+														          	</li>
+													          	</ul>
+													          	
+													          						          	
+													          	
 
 
-										          </h4></blockquote>
-										        </div>
-										        <div ng-show="tab.isSet(2)">
-										          <h4>Puesto Desempeñado</h4>
-										          <blockquote  class="{{trabajo.nameclase}} text-justify"> {{trabajo.puesto}}</blockquote>
-										        </div>
-										        <div ng-show="tab.isSet(3) " >
-										          <h4>Actividades Principales</h4>
-										          <blockquote  class="{{trabajo.nameclase}} text-justify">
-										          	
-										          	<ul class="list-group">
-										          		<li>
-										          			{{trabajo.actividaduno}}
-										          		</li>
-										          		<li>
-										          			{{trabajo.actividaddos}}
-										          		</li>
-										          		<li>
-										          			{{trabajo.actividadtres}}
-										          		</li>
-										          	</ul>
-										          </blockquote>
-										        </div>
-										         <div ng-show="tab.isSet(4) " >
-										          <h4>Tecnologias Ocupadas</h4>
-										          <blockquote  class="{{trabajo.nameclase}} text-justify"> {{trabajo.tecnologias}}</blockquote>
-										        </div>
-					      </section>
+													          </h4></blockquote>
+													        </div>
+													        <div ng-show="tab.isSet(2)">
+													          <h4>Puesto Desempeñado</h4>
+													          <blockquote  class="{{trabajo.nameclase}} text-justify"> {{trabajo.puesto}}</blockquote>
+													        </div>
+													        <div ng-show="tab.isSet(3) " >
+													          <h4>Actividades Principales</h4>
+													          <blockquote  class="{{trabajo.nameclase}} text-justify">
+													          	
+													          	<ul class="list-group">
+													          		<li>
+													          			{{trabajo.actividaduno}}
+													          		</li>
+													          		<li>
+													          			{{trabajo.actividaddos}}
+													          		</li>
+													          		<li>
+													          			{{trabajo.actividadtres}}
+													          		</li>
+													          	</ul>
+													          </blockquote>
+													        </div>
+													         <div ng-show="tab.isSet(4) " >
+													          <h4>Tecnologias Ocupadas</h4>
+													          <blockquote  class="{{trabajo.nameclase}} text-justify"> {{trabajo.tecnologias}}</blockquote>
+													        </div>
+								      </article>
 
-				</div>		      
+							</div>		      
 	 </section>
 	 <br>
 
 		
-		<footer class="pie  ">
+
+	<footer >
       	
      <div class="container">
 				<div class="col-lg-9 col-lg-offset-1">
 			
-						<p class="lead text-center lema">"Camina hacia el futuro" <span class="glyphicon glyphicon-road" aria-hidden="true"></span></p>  
-					  <p class="text-center italic">Hecho con <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> en México 2015  Todos los derechos reservados    <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>  </p>
+						<h3 class=" text-center lema">"Camina hacia el futuro" <span class="glyphicon glyphicon-road" aria-hidden="true"></span></h3>  
+					  <h3 class="text-center ">Hecho con &nbsp;<span class="glyphicon glyphicon-heart" aria-hidden="true">   </span>&nbsp;&nbsp;en México&nbsp; <span class="name-tres"> Developer Web Marley   </span>&nbsp; 2016  </h3>
 						<br>
 					
 					
@@ -201,8 +181,32 @@ $(document).ready(function(){
      </div>    
 </footer>
 
-
-	
+ <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title my-name-dos text-center">Developer Web Marley</h4>
+                </div>
+                <div class="modal-body">
+                <ul class="list-inline text-center">
+                	<li><i class="fa fa-whatsapp fa-2x text-left" aria-hidden="true"><span class="cel">&nbsp;55-45823081</span></i></li>
+                	<li>
+                    <i class="fa fa-envelope fa-2x text-rigth" aria-hidden="true"><span class="email">&nbsp;liyng23@gmail.com </span> </i></li>
+                </ul>
+                
+                </div>
+                <div class="modal-footer">
+                <p class="text-center"><i class="fa fa-cog fa-spin fa-2x fa-fw"></i>
+<span class="sr-only">Loading...</span>
+Más puede el que quiere, que el que sabe</p>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

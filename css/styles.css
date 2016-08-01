@@ -16,7 +16,6 @@ h2{
   font-family: 'Lato', sans-serif;
 }
 
-
 /* ---------------------------------------
 ----                 header          ----
 ----                                 ----
@@ -29,47 +28,43 @@ h2{
 .navbar-default .navbar-nav>li>a {
     color: #F6F6F6 ;
 }
-.navbar{background:  black;
+/*.navbar{background:  black;
 
-   }
+   }*/
   .my-name-dos { font-family: 'Pacifico', cursive;
-  font-weight: 10;
+
   font-size: 25px;
   color: white;
+
 } 
   .my-name { font-family: 'Pacifico', cursive;
-  font-weight: 10;
-  font-size:  30px;
+
+  font-size:  28px;
   color: white;
 }
+ .name-tres { font-family: 'Pacifico', cursive;
 
-.entrada{
-  background: #2A363B;
-color: white;}
-.hola{color:#f3036e;
-  font-family: 'Lato', sans-serif;
-  font-size:  35px;
-  ;
-
-}
-
-.informa{
-
-  color:white;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 15px;
   font-size:  25px;
-
-
+ color: white;
 }
-.saludos{
+
+.jumbotron  {
+    background: white;
+  padding: 5px 14px;
+  font-size: 21px;
+}
+.algo{
+  background: #ebebeb;
+}
+
+/* ---------------------------------------
+----                 efecto          ----
+----                                 ----
+--------------------------------------- */ 
+.momentos{
+  background:    #141414;
   color:white;
-  font-family: 'Lato', sans-serif;
-  font-size:  25px;
-     ;
-
 }
- 
 
 li .active{background:  #ffffff;}
 
@@ -77,22 +72,10 @@ li .active{background:  #ffffff;}
   background: white;
   border-color:#FF0092;
 }
-
-
 .no-space{    padding-right:0px;
    
     padding-left: 0px;
    }
-
-.momentos{
-  background:    #141414;
-  color:white;
-}
-.info{ z-index: 4;
-}
-.des-actividad{font-size: 27px;}
-}
-.title-actividad{font-size: 25px;}
 .tit{
 
     position: absolute;
@@ -111,24 +94,23 @@ li .active{background:  #ffffff;}
 
 }
 
-  /* .title-actividad{ 
-  font-family: 'Lato', sans-serif;
-  font-size:  40px;
-  font-weight: 300;}
-  /* --------------------------------- 
-  efecto*/
   .k-effect li:hover span.mask {
     transition: all 0.3s ease-in-out 0.25s;
     -moz-transition: all 0.3s ease-in-out 0.25s;
     -webkit-transition: all 0.3s ease-in-out 0.25s;
     -o-transition: all 0.3s ease-in-out 0.25s;
-}
+
+   
+           }
 
 span.mask, ul.k-effect li, ul.k-effect img {
     transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;
     -o-transition: all 0.2s ease-in-out 0s;
     -webkit-transition: all 0.2s ease-in-out 0s;
+
+
+
 }
 /*reset*/
 ul.k-effect {list-style: none outside none;margin: 0;padding: 0;}
@@ -136,7 +118,14 @@ ul.k-effect li {list-style: none outside none;}
 
 ul.k-effect li:hover img {opacity: 0.9
 
-  ;}
+
+  ;
+
+  transform:scale(1.2);
+            -ms-transform:scale(1.2); // IE 9 
+            -moz-transform:scale(1.2); // Firefox 
+            -webkit-transform:scale(1.2); // Safari and Chrome
+}
 
 ul.k-effect li {
     background: #fff;
@@ -172,124 +161,47 @@ ul.k-effect li >  {
 .fromat{padding-right:30px;
 padding-left: 30px;}
 /* ---------------------------------------
-----              empleoss         ----
-----                                 ----
---------------------------------------- */ .list{color: white;}
-.list2{color: black;}
-.logoempresa{
-  position: relative;
-  z-index: 99;
-}
-a .enlacbtn:link{
-    text-decoration:none;  
-}
-.enlacebtn{
-  position: relative;
-    top: 17px;
-      color: black;
-    background: none;
-    border: 1px solid black;
-    font-size: 15px;
-    padding: 7px 25px;
-    font-weight: normal;
-    display: inline-block;
-    text-decoration: none;
-    font-family: "HelveticaLTStd-Roman", Arial, sans-serif;
-    min-width: 120px;
-    text-transform: uppercase;
-    display: inline-block;
-      text-decoration:none;  
-}
-.chamba{border-color: #FF0092;  }
-.glyphicon-ok {color: #FF0092;}
-.ins{color: #736F66;}
-.tiempo{color: #228DFF; font-size: 25px;}
-.glyphicon-briefcase{color:white;}
-
-.company{ color:#44749D; font-size: 28px;}
-.descripcion{font-size: 25px;}
-
-.glyphicon-hand-up{z-index: 99;
-position: relative;
-top: -80px;}
-
-.imagen:hover >.manita{
-  position: relative;
-  z-index: 99;
-  top: -70px;
-  left: 45px;
-  font-size: 30px;
-color: white;
-
-
-;
-  -webkit-text-stroke:1px #FF0092;
-
-;
-
-  transform : scale(2);
-    -moz-transform : scale(2); /* Firefox */
-    -webkit-transform : scale(2); /* Chrome - Safari */
-    -o-transform : scale(2); /* Opera */
-    -ms-transform : scale(2); /* IE9 */
-
-}
-
-.imagen:hover >.manita-left{
-  position: relative;
-  z-index: 99;
-  top: -70px;
-  left:-70px;
-  font: 30px;
-color: white
-
-;
- -webkit-text-stroke:1px #FF0092;
-          
-  transform : scale(2);
-    -moz-transform : scale(2); /* Firefox */
-    -webkit-transform : scale(2); /* Chrome - Safari */
-    -o-transform : scale(2); /* Opera */
-    -ms-transform : scale(2); /* IE9 */
-}
-
-
-/* ---------------------------------------
-----            modal        ----
+----                modal         ----
 ----                                 ----
 --------------------------------------- */ 
-.modal-header ,.modal-footer {
-  background:#141414 ;
-
-
-color: white;
-  
+/*----------------------------*/
+.fa-envelope{
+  color: #CF283A;
 }
-.glyphicon-phone{ color:#00A3CC;}
-.glyphicon-envelope{color: #FB0B3F;}
-
-/* ---------------------------------------
-----                footer          ----
-----                                 ----
---------------------------------------- */ 
-
-
-footer{
-  background:#2A363B;
-  padding-top:  25px;
-  color: white
-  ; 
-  height: 100%;
+.cel, .email{
+  color:#100D06;
 }
-.glyphicon-road{color:   yellow;}
-.glyphicon-heart{
-  color:  red;
+.fa-whatsapp{
+  color: #36B320;
 }
-.glyphicon-copyright-mark{
+
+.modal-footer{
+ background: #3469FF;
   color: white;
 }
-
+.modal-header{
+  background: #F9AD09;
+}
+/* ---------------------------------------
+----                footer         ----
+----                                 ----
+--------------------------------------- */ 
 /*----------------------------*/
+footer{
+  background: black;
+  color:#F2F3EB;
+}
+.lema{
+  color: #c9c9c9;
+   font-weight: 40px;
+}
+.glyphicon-road{
+  color: #36B320;
+}
+.glyphicon-heart{
+  color: #CF283A;
+}
+
 @media screen and (max-width: 500px){
 
 .my-name{ font-family: 'Pacifico', cursive;
@@ -336,4 +248,3 @@ top: -30px;}
 }
 
 }
-.title-actividad{font-size: 15px;}

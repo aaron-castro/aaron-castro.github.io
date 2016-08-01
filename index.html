@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-
+<script src="https://use.fontawesome.com/your-embed-code.js"></script> 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	
 	<meta charset="utf-8">
@@ -20,7 +20,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".contacto").click(function(){
+		$("#myModal").modal('show');
+	});
+});
+</script>
 
 	
   
@@ -28,7 +34,7 @@
 <body >
 
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
 		
   <div class="container-fluid ">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -39,16 +45,17 @@
 			          <span class="icon-bar"></span>
 			          <span class="icon-bar"></span>
 			      </button>
-	      			<a class="navbar-brand" href="index.html"><p class="my-name text-left">F. Aaron Castro  G.</p></a>
+	      			<a class="navbar-brand" href="index.html"><p class="my-name text-left">
+Developer  Web Marley  </p></a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="  collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <div class=" container  collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav  navbar-right">
 		        <li class=""><a href="index.html"><p class="text-center">Acerca De Mi <span class="sr-only">(current)</span></p></a></li>
-		        <li><a href="empleos.html"><p class="text-center">Portafolio de Trabajo</p></a></li>
+		        <li><a href="empleos.html"><p class="text-center">Vida laboral</p></a></li>
 		       <!-- <li><a href="#"><p class="text-center">Pasatiempo</p></a></li> -->
-		       <li>    <a href="#" class="btn aaron "  data-toggle="modal" data-target="#myModal"><p>Contacto</p></a></li>
+		       <li>    <a href="#" class="btn contacto "  ><p>Contacto</p></a></li>
 		         
 		       <li class=""><a href="files/cv-aaron.pdf"><p class="text-center">Cv </p></a></li>
 		       
@@ -59,100 +66,21 @@
   </div><!-- /.container-fluid -->
       <!-- Button HTML (to Trigger Modal) -->
    <!-- Modal -->
-        <div id="myModal" class="modal fade ">
-			        <div class="modal-dialog ">
-					            <div class="modal-content ">
-						                <div class="modal-header">
-							                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							                    <h3 class="modal-title text-center my-name-dos"> F. Aaron Castro G.</h3>
-							                    
-							                    <h4 class="text-center"> <span class=" text-left glyphicon glyphicon-check" aria-hidden="true"></span> Más puede el que quiere, que el que sabe</h4>
-						                </div>
-						                <div class="modal-body ">
-							                  <div class="table-responsive">
-									                        <table class="table  table-striped text-center">
-									                                <thead>
-										                                      <tr >
-										                                      
-										                                        <th ><p class="text-center format"> <span class=" text-left glyphicon glyphicon-phone" aria-hidden="true"></span>Telefono</p></th>
-										                                        <th ><p class="text-center fomat"><span class=" text-left glyphicon glyphicon-envelope" aria-hidden="true"></span> Mail</p></th>
-
-										                                      </tr>
-										                                </thead>
-									                                <tbody>
-										                                      <tr>
-										                                        <td><p class="format">55-45823081</p> </td>
-										                                        <td><p class="format">liyng23@gmail.com</p></td>
-										                                      
-										                                        </tr>
-									                                  
-									                                </tbody>
-									                      </table>
-							                      </div>
-						                </div>
-					   
-					            </div>
-				        </div>
-	   </div>
-  
-
+        
 </nav>
-
-	<header class="entrada " >
-		
-
-			<div class="	container  ">	
-					<div class="col-lg-5  ">
-						<img src="img/yop.png"alt="Francisco aaron" class="img-responsive img-circle">
-								
-					         </div>
-					<div class="col-lg-6   c ">
-									<h1 class="	name text-justify">
-										 <span class="hola">Hola!</span>
-											<span class="saludos text-justify">	
-										       <SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript">
-								<!--
-												  function saludar(){
-												  		var tiempo = new Date();
-														var hora, cad="son las ";
-														with (tiempo){
-														hora = getHours();
-														cad += hora + ":" + getMinutes()+":"+getSeconds();
-														}
-												   if (hora < 12)
-						     								cad = "Buenos días ";
-												   else if (hora < 18)
-						  								   cad = "Buenas tardes ";
-												      else 
-						    								 cad = "Buenas noches " ;
-
-																return cad
-														}
-						// -->
-					 					     </SCRIPT>
+ 
+<header class="container jumbotron  ">
+   <figure class="col-lg-4"> <img src="img/yop.png" class="img img-responsive"></figure>
 
 
-											    <SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript">
-					<!-- 
-													document.write(saludar());
-					--> 
-											     </SCRIPT>
-											</span>
-											</h1>
-											<p class="text-justify informa"> Soy Desarrollador Web a  lo largo de mis experiencias y pràcticas estudiantiles,  
-											 				me he visto con la  necesidad de aprender  </br>front-end y back-end para cubrir
-															 los requerimientos de los desarrollos web <span class="puntos ">........................</span>
-															<span class=" glyphicon glyphicon-console" aria-hidden="true"></span>
-											</p>
-							</div>
-									 
-							
-	     </div> 
+<article class="col-lg-8"><h1 class="text-center">Aaron Castro Gomez</h1>
+        <p class="lead text-muted">Soy Lic. en Informática  egresado del <span class="text-success"> Instituto Tecnologico de Tlalnepantla</span> , donde pase mis mejores momentos de mi vida teniendo la   gloriosa y la oportunidad de ser estudiante. <br>
+        En la carrera lo que más me gusto fue el Desarrollo Web , y es lo que ejerceré profesionalmente.
 
+   </article>
 
-	</header>
-
-	<section >
+   </header>
+  <section >
 	 				
 			<div class="col-lg-12 momentos">
 				 <h2 class="text-center momentos">Mis mejores momentos</h2>
@@ -239,15 +167,13 @@
 
 
 	</section>
-	
-		
-		<footer class="pie  ">
+		<footer >
       	
      <div class="container">
 				<div class="col-lg-9 col-lg-offset-1">
 			
-						<p class="lead text-center lema">"Camina hacia el futuro" <span class="glyphicon glyphicon-road" aria-hidden="true"></span></p>  
-					  <p class="text-center italic">Hecho con <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> en México 2015  Todos los derechos reservados    <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>  </p>
+						<h3 class=" text-center lema">"Camina hacia el futuro" <span class="glyphicon glyphicon-road" aria-hidden="true"></span></h3>  
+					  <h3 class="text-center ">Hecho con &nbsp;<span class="glyphicon glyphicon-heart" aria-hidden="true">   </span>&nbsp;&nbsp;en México&nbsp; <span class="name-tres"> Developer Web Marley   </span>&nbsp; 2016  </h3>
 						<br>
 					
 					
@@ -257,8 +183,33 @@
      </div>    
 </footer>
 
+ <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title my-name-dos text-center">Developer Web Marley</h4>
+                </div>
+                <div class="modal-body">
+                <ul class="list-inline text-center">
+                	<li><i class="fa fa-whatsapp fa-2x text-left" aria-hidden="true"><span class="cel">&nbsp;55-45823081</span></i></li>
+                	<li>
+                    <i class="fa fa-envelope fa-2x text-rigth" aria-hidden="true"><span class="email">&nbsp;liyng23@gmail.com </span> </i></li>
+                </ul>
+                
+                </div>
+                <div class="modal-footer">
+                <p class="text-center"><i class="fa fa-cog fa-spin fa-2x fa-fw"></i>
+<span class="sr-only">Loading...</span>
+Más puede el que quiere, que el que sabe</p>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 
-	
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

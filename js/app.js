@@ -28,7 +28,7 @@ app.controller('TabController', function(){
  	puesto:'Desarrollador Web Freelance.',
  	lugar:'Nuestra Ubicación Hacienda San Nicolás Tolentino No.115 Col. Bosques de Echegaray.',
  	tel:'53-92-55-08.',
- 	tiempo:'Marzo del 2016 - Junio del 2016.',
+ 	tiempo:'Marzo del 2016 - Julio del 2016.',
  	actividaduno:'Desarrollo de Envio de correo,login, Generador y Gestor De Publicaciones (altas,bajas,cambio de las publicaciones realizadas) .',
  	actividaddos:'Manejo  de Redes Sociales (Facebook,Twitter)',
  	actividadtres:'Diseño de  Pagina Web ',

@@ -71,7 +71,7 @@ app.controller('TabController', function(){
  	classenlace:'',
  	giro:'Outsourcing.',
  	logo:'img/empleos/outsourcing.jpg',
- 	puesto:'Soporte Técnico Analista.',
+ 	puesto:'Soporte Técnico Analista en fórmula 1.',
  	lugar:' Calzada San Simón 208, Cuauhtémoc, Col. San Simón Tolnáhuac, 06920 Ciudad de México.',
  	tel:'01-55-4147-5000.',
  	tiempo:'Octubre del 2015 - Noviembre del 2015.',

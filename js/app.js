@@ -16,6 +16,28 @@ app.controller('TabController', function(){
     };
   });
  var company = [
+
+  {
+ 	nameclase:" ",
+ 	nav:"",
+ 	nombre:'Talented People ',
+ 	url:'#',
+ 	enlace:'',
+ 	classenlace:'',
+ 	giro:'Outsourcing.',
+ 	logo:'img/empleos/outsourcing.jpg',
+ 	puesto:'Soporte Técnico Analista en Formúla 1.',
+ 	lugar:' ',
+ 	tel:':55-40585030.',
+ 	tiempo:'Octubre del 2016 - Noviembre del 2016.',
+ 	
+ 	actividaduno:'Configuraciones de sistemas de puntos de ventas a servidores.',
+ 	actividaddos:'Consultas de ventas en el servidor. ',
+ 	actividadtres:'Instalación de puntos de ventas a servidores de la red. ',
+ 	
+ 	tecnologias:'Sql Server 2010. ',
+ 	
+ },
  {
  	nameclase:"",
  	nav:'list2',
@@ -28,7 +50,7 @@ app.controller('TabController', function(){
  	puesto:'Desarrollador Web Freelance.',
  	lugar:'Nuestra Ubicación Hacienda San Nicolás Tolentino No.115 Col. Bosques de Echegaray.',
  	tel:'53-92-55-08.',
- 	tiempo:'Marzo del 2016 - Julio del 2016.',
+ 	tiempo:'Marzo del 2016 - Junio del 2016.',
  	actividaduno:'Desarrollo de Envio de correo,login, Generador y Gestor De Publicaciones (altas,bajas,cambio de las publicaciones realizadas) .',
  	actividaddos:'Manejo  de Redes Sociales (Facebook,Twitter)',
  	actividadtres:'Diseño de  Pagina Web ',
@@ -71,7 +93,7 @@ app.controller('TabController', function(){
  	classenlace:'',
  	giro:'Outsourcing.',
  	logo:'img/empleos/outsourcing.jpg',
- 	puesto:'Soporte Técnico Analista en Fórmula 1.',
+ 	puesto:'Soporte Técnico Analista en Formúla 1.',
  	lugar:' Calzada San Simón 208, Cuauhtémoc, Col. San Simón Tolnáhuac, 06920 Ciudad de México.',
  	tel:'01-55-4147-5000.',
  	tiempo:'Octubre del 2015 - Noviembre del 2015.',

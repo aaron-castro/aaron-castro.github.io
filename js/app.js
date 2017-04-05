@@ -1,4 +1,4 @@
- var app= angular.module('empleos',[]);
+  var app= angular.module('empleos',[]);
 
  app.controller('EmpresaController',function(){
 
@@ -16,8 +16,49 @@ app.controller('TabController', function(){
     };
   });
  var company = [
-
   {
+ 	nameclase:" ",
+ 	nav:"",
+ 	nombre:'Kopernet',
+ 	url:'#',
+ 	enlace:'',
+ 	classenlace:'',
+ 	giro:'Desarrollos Web',
+ 	logo:'img/empleos/frenlace.jpg',
+ 	puesto:'Desarrollador Web Freelance.',
+ 	lugar:' ',
+ 	tel:':55- 53172783.',
+ 	tiempo:'Febrero del 2017 - Marzo del 2017.',
+ 	
+ 	actividaduno:'Obtención y validación de ubicación y check in para realizar registros . ',
+ 	actividaddos:'-Monitorización de procesos e informar status que se encuentran o faltan.',
+ 	actividadtres:'-Validación de cambio de contraseña para el login. ',
+ 	
+ 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, CSS3, Bootstrap  ',
+
+ },
+ {
+ 	nameclase:" ",
+ 	nav:"",
+ 	nombre:'Codeman Company',
+ 	url:'#',
+ 	enlace:'',
+ 	classenlace:'',
+ 	giro:'Desarrollos Web',
+ 	logo:'img/empleos/frenlace.jpg',
+ 	puesto:'Desarrollador Web Freelance.',
+ 	lugar:' ',
+ 	tel:':55-40585030.',
+ 	tiempo:'Enero del 2017 - Marzo del 2017.',
+ 	
+ 	actividaduno:'Maquetación de pagina web.',
+ 	actividaddos:'Maquetacion de diseño responsivo. ',
+ 	actividadtres:'Maquetacion para aplicaciones moviles. ',
+ 	
+ 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, CSS3, Bootstrap  ',
+
+ },
+ {
  	nameclase:" ",
  	nav:"",
  	nombre:'Talented People ',
@@ -37,6 +78,28 @@ app.controller('TabController', function(){
  	
  	tecnologias:'Sql Server 2010. ',
  	
+ },
+
+  {
+ 	nameclase:" ",
+ 	nav:"",
+ 	nombre:'Codeman Company',
+ 	url:'#',
+ 	enlace:'',
+ 	classenlace:'',
+ 	giro:'Desarrollos Web',
+ 	logo:'img/empleos/frenlace.jpg',
+ 	puesto:'Desarrollador Web Freelance.',
+ 	lugar:' ',
+ 	tel:':55-40585030.',
+ 	tiempo:'Abril del 2016 - Agosto del 2016.',
+ 	
+ 	actividaduno:'Crud de productos que contiene imagen , numeros y texto.',
+ 	actividaddos:'Validaciones en el crud y Login. ',
+ 	actividadtres:'Diseño web, trabajando conjunto con el diseñador grafico de acuerdo con la plantilla que realizo para el front-end. ',
+ 	
+ 	tecnologias:' PHP 5, PHP , MYSQL, JAVASCRIPT, JQUERY,HTML 5, CSS3, Bootstrap , Diseño Responsivo. ',
+
  },
  {
  	nameclase:"",
@@ -72,7 +135,7 @@ app.controller('TabController', function(){
  	puesto:'Desarrollador Web.',
  	lugar:'Satelite, Estado de México.',
  	tel:'53-93-07-00.',
- 	tiempo:'Noviembre del 2015 - Marzo del 2016.',
+ 	tiempo:'Noviembre del 2015 -Abril del 2016.',
  	actividaduno:'Modificasciones a módulos de los sistemas web de la compañia desarrollando soluciones para las nuevas necesidades de la empresa.',
  	actividaddos:'Envió masivo de mail utilizando  para diferentes servicios de la empresa construcción de plantillas personalizadas para cada campaña.',
  	actividadtres:'Sistemas de sorteo de beneficios para el personal que administra la empresa notificando por correo, llevando un processo de aceptación de terminos y condiciones para canjear su beneficio, llevando un registro en la base de datos.',

@@ -31,8 +31,8 @@ app.controller('TabController', function(){
  	tiempo:'Febrero del 2017 - Marzo del 2017.',
  	
  	actividaduno:'Obtención y validación de ubicación y check in para realizar registros . ',
- 	actividaddos:'-Monitorización de procesos e informar status que se encuentran o faltan.',
- 	actividadtres:'-Validación de cambio de contraseña para el login. ',
+ 	actividaddos:'Monitorización de procesos e informar status que se encuentran o faltan.',
+ 	actividadtres:'Validación de cambio de contraseña para el login. ',
  	
  	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, CSS3, Bootstrap  ',
 

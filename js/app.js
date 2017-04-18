@@ -68,7 +68,7 @@ app.controller('TabController', function(){
  	giro:'Outsourcing.',
  	logo:'img/empleos/outsourcing.jpg',
  	puesto:'Soporte Técnico Analista en Formúla 1.',
- 	lugar:' ',
+ 	lugar:'Autodromo Hermanos Rodriguez ',
  	tel:':55-40585030.',
  	tiempo:'Octubre del 2016 - Noviembre del 2016.',
  	
@@ -101,28 +101,8 @@ app.controller('TabController', function(){
  	tecnologias:' PHP 5, PHP , MYSQL, JAVASCRIPT, JQUERY,HTML 5, CSS3, Bootstrap , Diseño Responsivo. ',
 
  },
- {
- 	nameclase:"",
- 	nav:'list2',
- 	nombre:'Parroquia Anunciacion de Echegaray.',
- 	url:'http://parroquiaanunciacionechegaray.org.mx',
- 	enlace:'Sitio Web desarrollado',
- 	classenlace:'enlacebtn',
- 	giro:'Iglesia.',
- 	logo:'img/empleos/frenlace.jpg',
- 	puesto:'Desarrollador Web Freelance.',
- 	lugar:'Nuestra Ubicación Hacienda San Nicolás Tolentino No.115 Col. Bosques de Echegaray.',
- 	tel:'53-92-55-08.',
- 	tiempo:'Marzo del 2016 - Junio del 2016.',
- 	actividaduno:'Desarrollo de Envio de correo,login, Generador y Gestor De Publicaciones (altas,bajas,cambio de las publicaciones realizadas) .',
- 	actividaddos:'Manejo  de Redes Sociales (Facebook,Twitter)',
- 	actividadtres:'Diseño de  Pagina Web ',
- 	tecnologias:' PHP 5, PHP MAILER, MYSQL, JAVASCRIPT, JQUERY,HTML 5, CSS3, Bootstrap , Diseño Responsivo. ',
-
- 	
-
-
- },
+ 
+ 
  {
  	nameclase:"chamba",
  	nav:'list2',

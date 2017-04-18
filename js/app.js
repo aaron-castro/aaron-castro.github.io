@@ -34,7 +34,7 @@ app.controller('TabController', function(){
  	actividaddos:'Monitorización de procesos e informar status que se encuentran o faltan.',
  	actividadtres:'Validación de cambio de contraseña para el login. ',
  	
- 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, CSS3, Bootstrap  ',
+ 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, CSS3, Bootstrap,Angular 3.5  ',
 
  },
  {
@@ -55,7 +55,7 @@ app.controller('TabController', function(){
  	actividaddos:'Maquetacion de diseño responsivo. ',
  	actividadtres:'Maquetacion para aplicaciones moviles. ',
  	
- 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, CSS3, Bootstrap  ',
+ 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, CSS3, Bootstrap,Angular 3.5 ',
 
  },
  {

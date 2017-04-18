@@ -63,7 +63,7 @@ app.controller('TabController', function(){
  	nav:"",
  	nombre:'Talented People ',
  	url:'#',
- 	enlace:'Autodromo Hermanos Rodriguez',
+ 	enlace:'Autódromo Hermanos Rodriguez',
  	classenlace:'',
  	giro:'Outsourcing.',
  	logo:'img/empleos/outsourcing.jpg',

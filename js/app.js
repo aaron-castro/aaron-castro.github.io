@@ -26,7 +26,7 @@ app.controller('TabController', function(){
  	giro:'Desarrollos Web',
  	logo:'img/empleos/frenlace.jpg',
  	puesto:'Desarrollador Web Freelance.',
- 	lugar:' ',
+ 	lugar:'Home Office',
  	tel:':55- 53172783.',
  	tiempo:'Febrero del 2017 - Marzo del 2017.',
  	
@@ -47,7 +47,7 @@ app.controller('TabController', function(){
  	giro:'Desarrollos Web',
  	logo:'img/empleos/frenlace.jpg',
  	puesto:'Desarrollador Web Freelance.',
- 	lugar:' ',
+ 	lugar:'Home Office ',
  	tel:':55-40585030.',
  	tiempo:'Enero del 2017 - Marzo del 2017.',
  	
@@ -63,7 +63,7 @@ app.controller('TabController', function(){
  	nav:"",
  	nombre:'Talented People ',
  	url:'#',
- 	enlace:'',
+ 	enlace:'Autodromo Hermanos Rodriguez',
  	classenlace:'',
  	giro:'Outsourcing.',
  	logo:'img/empleos/outsourcing.jpg',
@@ -90,7 +90,7 @@ app.controller('TabController', function(){
  	giro:'Desarrollos Web',
  	logo:'img/empleos/frenlace.jpg',
  	puesto:'Desarrollador Web Freelance.',
- 	lugar:' ',
+ 	lugar:'Home Office ',
  	tel:':55-40585030.',
  	tiempo:'Abril del 2016 - Agosto del 2016.',
  	

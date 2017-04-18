@@ -137,7 +137,7 @@ app.controller('TabController', function(){
  	giro:'Outsourcing.',
  	logo:'img/empleos/outsourcing.jpg',
  	puesto:'Soporte Técnico Analista en Formúla 1.',
- 	lugar:' Calzada San Simón 208, Cuauhtémoc, Col. San Simón Tolnáhuac, 06920 Ciudad de México.',
+ 	lugar:'Autóromo Hermanos Rodriguez',
  	tel:'01-55-4147-5000.',
  	tiempo:'Octubre del 2015 - Noviembre del 2015.',
  	

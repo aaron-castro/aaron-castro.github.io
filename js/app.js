@@ -17,6 +17,28 @@ app.controller('TabController', function(){
   });
  var company = [
   {
+    nameclase:" ",
+ 	nav:"",
+ 	nombre:'Codeman Company',
+ 	url:'#',
+ 	enlace:'',
+ 	classenlace:'',
+ 	giro:'Desarrollos Web',
+ 	logo:'img/empleos/frenlace.jpg',
+ 	puesto:'Desarrollador Web Freelance.',
+ 	lugar:'Home Office ',
+ 	tel:':55-40585030.',
+ 	tiempo:'Enero del 2017 -Actualmente.',
+ 	
+ 	actividaduno:'Maquetación de pagina web.',
+ 	actividaddos:'Maquetacion de diseño responsivo. ',
+ 	actividadtres:'Maquetacion para aplicaciones moviles. ',
+ 	
+ 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, Sass Css, Bootstrap,Angular 3.5,Ajax,Recaptcha ',
+ 	
+
+ },
+ {
  	nameclase:" ",
  	nav:"",
  	nombre:'Kopernet',
@@ -35,27 +57,6 @@ app.controller('TabController', function(){
  	actividadtres:'Validación de cambio de contraseña para el login. ',
  	
  	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, CSS3, Bootstrap,Angular 3.5  ',
-
- },
- {
- 	nameclase:" ",
- 	nav:"",
- 	nombre:'Codeman Company',
- 	url:'#',
- 	enlace:'',
- 	classenlace:'',
- 	giro:'Desarrollos Web',
- 	logo:'img/empleos/frenlace.jpg',
- 	puesto:'Desarrollador Web Freelance.',
- 	lugar:'Home Office ',
- 	tel:':55-40585030.',
- 	tiempo:'Enero del 2017 - Marzo del 2017.',
- 	
- 	actividaduno:'Maquetación de pagina web.',
- 	actividaddos:'Maquetacion de diseño responsivo. ',
- 	actividadtres:'Maquetacion para aplicaciones moviles. ',
- 	
- 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, CSS3, Bootstrap,Angular 3.5 ',
 
  },
  {

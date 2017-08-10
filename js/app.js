@@ -34,7 +34,7 @@ app.controller('TabController', function(){
  	actividaddos:'-Proceso de altas, bajas y modificaciones  ',
  	actividadtres:'-Trabajo de equipo con diseñador gràfico. ',
  	
- 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, Sass Css, Bootstrap,Angular 3.5,Ajax,Recaptcha ',
+ 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, Sass, Css3, Bootstrap,Angular 3.5,Ajax,Recaptcha ',
  	
 
  },

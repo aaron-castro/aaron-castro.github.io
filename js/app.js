@@ -28,11 +28,11 @@ app.controller('TabController', function(){
  	puesto:'Desarrollador Web Freelance.',
  	lugar:'Home Office ',
  	tel:':55-40585030.',
- 	tiempo:'Enero del 2017 -Actualmente.',
+ 	tiempo:'Enero del 2017 -Agosto 2017.',
  	
- 	actividaduno:'Maquetación de pagina web.',
- 	actividaddos:'Maquetacion de diseño responsivo. ',
- 	actividadtres:'Maquetacion para aplicaciones moviles. ',
+ 	actividaduno:'-Maquetación de pàgina web y diseño responsivo de pagina web,Validaciones de formulario, Recaptcha.',
+ 	actividaddos:'-Proceso de altas, bajas y modificaciones  ',
+ 	actividadtres:'-Trabajo de equipo con diseñador gràfico. ',
  	
  	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, Sass Css, Bootstrap,Angular 3.5,Ajax,Recaptcha ',
  	
@@ -80,29 +80,6 @@ app.controller('TabController', function(){
  	tecnologias:'Sql Server 2010. ',
  	
  },
-
-  {
- 	nameclase:" ",
- 	nav:"",
- 	nombre:'Codeman Company',
- 	url:'#',
- 	enlace:'',
- 	classenlace:'',
- 	giro:'Desarrollos Web',
- 	logo:'img/empleos/frenlace.jpg',
- 	puesto:'Desarrollador Web Freelance.',
- 	lugar:'Home Office ',
- 	tel:':55-40585030.',
- 	tiempo:'Abril del 2016 - Agosto del 2016.',
- 	
- 	actividaduno:'Crud de productos que contiene imagen , numeros y texto.',
- 	actividaddos:'Validaciones en el crud y Login. ',
- 	actividadtres:'Diseño web, trabajando conjunto con el diseñador grafico de acuerdo con la plantilla que realizo para el front-end. ',
- 	
- 	tecnologias:' PHP 5, PHP , MYSQL, JAVASCRIPT, JQUERY,HTML 5, CSS3, Bootstrap , Diseño Responsivo. ',
-
- },
- 
  
  {
  	nameclase:"chamba",

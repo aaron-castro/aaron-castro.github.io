@@ -1,4 +1,4 @@
-  var app= angular.module('empleos',[]);
+    var app= angular.module('empleos',[]);
 
  app.controller('EmpresaController',function(){
 
@@ -16,30 +16,7 @@ app.controller('TabController', function(){
     };
   });
  var company = [
-  {
-    nameclase:" ",
- 	nav:"",
- 	nombre:'Codeman Company',
- 	url:'#',
- 	enlace:'',
- 	classenlace:'',
- 	giro:'Desarrollos Web',
- 	logo:'img/empleos/frenlace.jpg',
- 	puesto:'Desarrollador Web Freelance.',
- 	lugar:'Home Office ',
- 	tel:':55-40585030.',
- 	tiempo:'Enero del 2017 -Noviembre.',
- 	
- 	actividaduno:'Maquetación de pagina web.',
- 	actividaddos:'Maquetacion de diseño responsivo. ',
- 	actividadtres:'Maquetacion para aplicaciones moviles. ',
- 	
- 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, Sass Css, Bootstrap,Angular 3.5,Ajax,Recaptcha ',
- 	
-
- },
  {
-  {
   nameclase:" ",
   nav:"",
   nombre:'Talented People ',
@@ -60,6 +37,29 @@ app.controller('TabController', function(){
   tecnologias:'Sql Server 2010. ',
   
  },
+  {
+    nameclase:" ",
+ 	nav:"",
+ 	nombre:'Codeman Company',
+ 	url:'#',
+ 	enlace:'',
+ 	classenlace:'',
+ 	giro:'Desarrollos Web',
+ 	logo:'img/empleos/frenlace.jpg',
+ 	puesto:'Desarrollador Web Freelance.',
+ 	lugar:'Home Office ',
+ 	tel:':55-40585030.',
+ 	tiempo:'Enero del 2017 - Noviembre.',
+ 	
+ 	actividaduno:'Maquetación de pagina web.',
+ 	actividaddos:'Maquetacion de diseño responsivo. ',
+ 	actividadtres:'Maquetacion para aplicaciones moviles. ',
+ 	
+ 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, Sass Css, Bootstrap,Angular 3.5,Ajax,Recaptcha ',
+ 	
+
+ },
+ {
  	nameclase:" ",
  	nav:"",
  	nombre:'Kopernet',

@@ -28,7 +28,7 @@ app.controller('TabController', function(){
  	puesto:'Desarrollador Web Freelance.',
  	lugar:'Home Office ',
  	tel:':55-40585030.',
- 	tiempo:'Enero del 2017 -Actualmente.',
+ 	tiempo:'Enero del 2017 -Noviembre.',
  	
  	actividaduno:'Maquetación de pagina web.',
  	actividaddos:'Maquetacion de diseño responsivo. ',
@@ -39,6 +39,27 @@ app.controller('TabController', function(){
 
  },
  {
+  {
+  nameclase:" ",
+  nav:"",
+  nombre:'Talented People ',
+  url:'#',
+  enlace:'Autódromo Hermanos Rodriguez',
+  classenlace:'',
+  giro:'Outsourcing.',
+  logo:'img/empleos/outsourcing.jpg',
+  puesto:'Soporte Técnico Analista en Formúla 1.',
+  lugar:'Autodromo Hermanos Rodriguez ',
+  tel:':55-40585030.',
+  tiempo:'Octubre del 2017 - Noviembre del 2017.',
+  
+  actividaduno:'Configuraciones de sistemas de puntos de ventas a servidores.',
+  actividaddos:'Consultas de ventas en el servidor. ',
+  actividadtres:'Instalación de puntos de ventas a servidores de la red. ',
+  
+  tecnologias:'Sql Server 2010. ',
+  
+ },
  	nameclase:" ",
  	nav:"",
  	nombre:'Kopernet',

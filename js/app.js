@@ -27,7 +27,7 @@ app.controller('TabController', function(){
  	logo:'img/empleos/frenlace.jpg',
  	puesto:'Desarrollador Web Freelance.',
  	lugar:'Home Office ',
- 	tel:':55-40585030.',
+ 	tel:':55- 45966779.',
  	tiempo:'Octubre del 2017 .',
  	
  	actividaduno:'Maquetación de pagina web.',

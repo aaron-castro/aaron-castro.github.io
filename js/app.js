@@ -21,7 +21,7 @@ app.controller('TabController', function(){
  	nav:"",
  	nombre:'Proa',
  	url:'http://eventosproa.com/',
- 	enlace:'',
+ 	enlace:'eventos Proa',
  	classenlace:'',
  	giro:'Desarrollos Web',
  	logo:'img/empleos/frenlace.jpg',
@@ -34,7 +34,7 @@ app.controller('TabController', function(){
  	actividaddos:'Maquetacion de diseño responsivo. ',
  	actividadtres:'Maquetacion para aplicaciones moviles. ',
  	
- 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, Sass Css, Bootstrap,Angular 3.5,Ajax,Recaptcha ',
+ 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, Sass Css, Bootstrap,Angular 3.5,Php,Mysql,Canvas',
  	
 
  },

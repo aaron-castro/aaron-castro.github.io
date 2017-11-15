@@ -16,6 +16,28 @@ app.controller('TabController', function(){
     };
   });
  var company = [
+     {
+    nameclase:" ",
+ 	nav:"",
+ 	nombre:'Proa',
+ 	url:'http://eventosproa.com/',
+ 	enlace:'',
+ 	classenlace:'',
+ 	giro:'Desarrollos Web',
+ 	logo:'img/empleos/frenlace.jpg',
+ 	puesto:'Desarrollador Web Freelance.',
+ 	lugar:'Home Office ',
+ 	tel:':55-40585030.',
+ 	tiempo:'Octubre del 2017 .',
+ 	
+ 	actividaduno:'Maquetación de pagina web.',
+ 	actividaddos:'Maquetacion de diseño responsivo. ',
+ 	actividadtres:'Maquetacion para aplicaciones moviles. ',
+ 	
+ 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY, Sass Css, Bootstrap,Angular 3.5,Ajax,Recaptcha ',
+ 	
+
+ },
  {
   nameclase:" ",
   nav:"",
@@ -41,7 +63,7 @@ app.controller('TabController', function(){
     nameclase:" ",
  	nav:"",
  	nombre:'Codeman Company',
- 	url:'#',
+ 	url:'https://codeman.company/',
  	enlace:'',
  	classenlace:'',
  	giro:'Desarrollos Web',
@@ -63,7 +85,7 @@ app.controller('TabController', function(){
  	nameclase:" ",
  	nav:"",
  	nombre:'Kopernet',
- 	url:'#',
+ 	url:'kopernet',
  	enlace:'',
  	classenlace:'',
  	giro:'Desarrollos Web',
@@ -82,7 +104,7 @@ app.controller('TabController', function(){
  },
  {
  	nameclase:" ",
- 	nav:"",
+ 	nav:"Talent People",
  	nombre:'Talented People ',
  	url:'#',
  	enlace:'Autódromo Hermanos Rodriguez',
@@ -106,7 +128,7 @@ app.controller('TabController', function(){
  	nameclase:" ",
  	nav:"",
  	nombre:'Codeman Company',
- 	url:'#',
+ 	url:'https://codeman.company/',
  	enlace:'',
  	classenlace:'',
  	giro:'Desarrollos Web',
@@ -129,7 +151,7 @@ app.controller('TabController', function(){
  	nameclase:"chamba",
  	nav:'list2',
  	nombre:'Consorcio Laboro.',
- 	url:'#',
+ 	url:'Consorcio Laboro',
  	enlace:'',
  	 	classenlace:'',
  	giro:'Outsourcing.',
@@ -153,7 +175,7 @@ app.controller('TabController', function(){
  	nameclase:" ",
  	nav:"list2",
  	nombre:'Manpower.',
- 	url:'#',
+ 	url:'Manppower',
  	enlace:'',
  	classenlace:'',
  	giro:'Outsourcing.',
@@ -174,7 +196,7 @@ app.controller('TabController', function(){
  	nameclase:"chamba ",
  	nav:"list2",
  	nombre:'Sertec.',
- 	url:'#',
+ 	url:'Sertec',
  	enlace:'',
  	classenlace:'',
  	giro:'Gestion de Cobranza.',
@@ -193,28 +215,7 @@ app.controller('TabController', function(){
  	
  },
 
-{
- 	nameclase:" ",
- 	nav:"list2",
- 	nombre:'Ld Suministros Industriales.',
- 	url:'http://ld.org.mx/',
- 	enlace:'Sitio Web desarrollado',
- 	classenlace:'enlacebtn',
- 	giro:'Comercializadora de productos industriales.',
- 	logo:'img/empleos/frenlace.jpg',
- 	puesto:'Desarrollador Web Freelance.',
- 	lugar:'San Juan Ixtacala,Tlalnepantla de Baz Estado de México.',
- 	tel:' 58-94-16-06.',
- 	tiempo:'Abril del 2015 - Mayo del 2015.',
- 	
- 	actividaduno:'Desarrollo y Diseño de la página web.',
- 	actividaddos:'Diseño responsivo. ',
- 	actividadtres:'Manejo de Redes Sociales . ',
- tecnologias:' PHP 5, PHP MAILER, JAVASCRIPT, JQUERY,HTML 5, CSS3, Bootstrap , Diseño Responsivo. ',
 
-
- 	
- },
 
 
  ];

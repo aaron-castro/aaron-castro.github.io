@@ -34,7 +34,7 @@ app.controller('TabController', function(){
  	actividaddos:'Login ,processo de registro de datos y exportación de datos e imagenes en pdf. ',
  	actividadtres:'Sistema de reporte con busqueda, filtros y exportación de datos a excel de acuerdo a los filtros o busquedas en excel. ',
  	
- 	tecnologias:'  HTML 5,JAVASCRIPT, JQUERY,Json,Ajax,Sass Css, Bootstrap,Angular 3.5,Php,Mysql,Canvas',
+ 	tecnologias:'  HTML 5,JAVASCRIPT,JQUERY,Json,Ajax,Sass Css, Bootstrap,Angular 3.5,Php,Mysql,Canvas',
  	
 
  },

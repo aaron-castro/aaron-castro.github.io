@@ -10,7 +10,7 @@
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Lato|Pacifico" rel="stylesheet">
-<link rel="icon" type="image/png" href="img/faviicon.png" />
+
 </head>
 <body>
 	<nav class="efecto ">
@@ -19,7 +19,7 @@
 				<li class="centro">
 					<p class="aaron">Developer Web</p>
 				</li>
-				<li class="derecha  text-center menu hidden-lg hidden-sm ">
+				<li class="derecha  text-center menu  hidden-xs-sm">
 						<p class="circle"><span style="font-size:30px;cursor:pointer" onclick="openNav()"  class="fa fa-bars fa-2x"></span></p>
 				</li>
 				<li class="derecha hidden-lg hidden-sm">	
@@ -36,10 +36,10 @@
 
 
 
-	<main class="container hidden-xs-sm  ">
-		<aside class="col-lg-3   " style="position:fixed;left:0; margin-left: 2%">
+	<main class="container " id="md-lg">
+		<aside class="col-lg-3    " style="position:fixed;left:0; margin-left: 2%">
 			<div class="perfil  text-center ">
-				<img src="img/yop.jpg" class="img-circle ">
+				<img src="img/yop.jpg" class="img-circle im">
 				<h1 class="name"> Aaron Castro </h1>
 				<h2 class="name">	<i class="fa fa-file-code-o fa-2x" aria-hidden="true"></i> Developer Web</h2>
 			</div>
@@ -47,7 +47,7 @@
 				<a href="files/cv-aaron.pdf" class="ancla "><p class="enla">Descargar Cv</p></a>
 			</div>
 		</aside>
-		<section class="col-lg-7 text-justify  hidden-sm  " style="display:block;left:23.5%; 	">
+		<section class="col-lg-7 text-justify   " style="display:block;left:23.5%; 	">
 			<div class="clearfix"></div>
 			<article class="descripcion">
 				<h2>Acerca de mi</h2>
@@ -241,7 +241,7 @@
        		 		 	<ul class="lead">
        		 		 		<li>Giro: Desarrollos Web</li>
        		 		 		<li>Ubicación: Home Office</li>
-       		 		 		<li>Tel: :55- 1204-2400.</li>
+       		 		 		<li>Tel: :55-40585030.</li>
        		 		 		
        		 		 	</ul>
        		 </article>
@@ -496,6 +496,19 @@ Tel: 01-55-52-78-43-27.</li>
 
   <script src="js/bootstrap.js"></script>
   <script>
+
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        //document.getElementById("md-lg").style.backgroundColor = "yellow";
+    } else {
+        document.getElementById("md-lg").style.display = "none";
+    }
+}
+
+var x = window.matchMedia("(min-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
 
 	$(window).load(function(){
     var $container = $('.portfolioContainer');

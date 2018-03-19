@@ -186,13 +186,7 @@
  	<br>	
 </article>
 		</section>
-		<div id="mySidenav" class="sidenav">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="#">About</a>
-				<a href="#">Services</a>
-				<a href="#">Clients</a>
-				<a href="#">Contact</a>
-		</div>
+		
 		<aside class="col-lg-2 text-center" style="position:fixed;right:0; margin-right: 10%">
 			<ul class="barra hidden-">	
 					<li> <i class="fa fa-address-card fa-3x" aria-hidden="true"></i> <p>Acerca de mi</p></li>
@@ -213,6 +207,13 @@
 		</div>
 	</div>    
 </footer>
+<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="#">About</a>
+				<a href="#">Services</a>
+				<a href="#">Clients</a>
+				<a href="#">Contact</a>
+		</div>
 <!-- Modal master -->
 <div id="master" class="modal fade " role="dialog">
   <div class="modal-dialog modal-lg">
@@ -505,7 +506,7 @@ function myFunction(x) {
     }
 }
 
-var x = window.matchMedia("(min-width: 900px)")
+var x = window.matchMedia("(min-width: 700px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
 

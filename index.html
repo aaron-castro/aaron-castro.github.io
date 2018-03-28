@@ -10,9 +10,33 @@
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Tangerine" rel="stylesheet">
+<style type="text/css">
+ .nav-pills > li.active > a, .nav-pills > li.active > a:hover  {
+    color: black;
+    background-color: transparent;
+    border-left: 2px solid #563d7c;
+    }
+
+        .nav-pills > li.active > a:hover {
+             color: black;
+    background-color: transparrnt;
+        }
+        .main-menu{
+          padding-left: 25px;
+        }
+        .nav-pills > li > a {
+  border-radius: 0px; 
+  padding: 4px 20px!important;
+}
+.nav > li > a {
+  position: relative;
+  display: inline-block;
+  /* padding: 10px 15px; */
+}
+</style>
 
 </head>
-<body>
+<body id="home" data-spy="scroll" data-target="#navigation" data-offset="20">
 	<nav class="efecto ">
 		<div class=" ">
 			<ul class="navega">
@@ -49,7 +73,7 @@
 		</aside>
 		<section class="col-lg-7 text-justify   " style="display:block;left:23.5%; 	">
 			<div class="clearfix"></div>
-			<article class="descripcion">
+			<article class="descripcion" id="acerca">
 				<h2>Acerca de mi</h2>
 				
 				<p>¡Hola! Soy Aaron Castro Desarrollador Web  especializado en desarrollo de front-end. Experimentado con todas las etapas del ciclo de desarrollo para proyectos web dinámicos. </p>
@@ -69,7 +93,7 @@
 				<p>Cel: <span class="text-center">55-4582-3081</span></p>
 			</article>
 			<div class="clearfix"></div>
-<article class="descripcion">
+<article class="descripcion" id="Skills">
 	<h2 class="article-titulo">Habilidades Profesionales</h2>
 	<div class="progress">
     	<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
@@ -108,7 +132,7 @@
        </div>
 </article>
 <div class="clearfix"></div>
-<article class="descripcion-dos">
+<article class="descripcion-dos" id="experiencia">
 	<div class="x">
 		<h2 class="article-titulo">Experiencia Laboral</h2>
 		<div class="portfolioFilter">
@@ -194,13 +218,24 @@
 				<a href="#">Contact</a>
 		</div>
 		<aside class="col-lg-2 text-center" style="position:fixed;right:0; margin-right: 10%">
-			<ul class="barra hidden-">	
-					<li> <i class="fa fa-address-card fa-3x" aria-hidden="true"></i> <p>Acerca de mi</p></li>
+			<!--<ul class="barra hidden-">	
+					<li>  <p>Acerca de mi</p></li>
 					<li>	
-						<a><i class="fa fa-area-chart fa-3x	" aria-hidden="true"></i> <p>Skills</p></a>
+						<a> <p>Skills</p></a>
 					</li>
-					<li><a href="#"><i class="fa fa-briefcase fa-3x" aria-hidden="true"></i><p>Experiencia</p></a></li>
-			</ul>
+					<li><a href="#"><p>Experiencia</p></a></li>
+			</ul>-->
+
+      <div  id="navigation" >
+      <div class="main-menu" id="navigation">
+          <ul class="nav nav-pills nav-stacked">
+              <li><a href="#acerca"><i class="fa fa-address-card fa-3x" aria-hidden="true"></i><br>Acerca</a></li>
+            <li><a href="#Skills"><i class="fa fa-area-chart fa-3x " aria-hidden="true"></i><br>Skills</a></li>
+            <li><a href="#experiencia"><i class="fa fa-briefcase fa-3x" aria-hidden="true"></i><br>Experiencia</a></li>
+           
+          </ul>
+        </div>
+</div>
 		</aside>
 	</main>
 <footer>

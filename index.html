@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es-mx">
 <head>
@@ -10,45 +11,20 @@
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Tangerine" rel="stylesheet">
-<style type="text/css">
- .nav-pills > li.active > a, .nav-pills > li.active > a:hover  {
-    color: black;
-    background-color: transparent;
-    border-left: 2px solid #563d7c;
-   color:#563d7c;
-    }
-
-        .nav-pills > li.active > a:hover {
-             color: black;
-    background-color: transparrnt;
-        }
-        .main-menu{
-          padding-left: 25px;
-        }
-        .nav-pills > li > a {
-  border-radius: 0px; 
-  padding: 4px 20px!important;
-}
-.nav > li > a {
-  position: relative;
-  display: inline-block;
-  /* padding: 10px 15px; */
-}
-</style>
 
 </head>
 <body id="home" data-spy="scroll" data-target="#navigation" data-offset="20">
 	<nav class="efecto ">
-		<div class=" ">
+		<div class="container ">
 			<ul class="navega">
 				<li class="centro">
 					<p class="aaron">Developer Web</p>
 				</li>
-				<li class="derecha  text-center menu  hidden-xs-sm">
+				<li class="derecha  text-center menu hidden-lg hidden-sm  ">
 						<p class="circle"><span style="font-size:30px;cursor:pointer" onclick="openNav()"  class="fa fa-bars fa-2x"></span></p>
 				</li>
-				<li class="derecha hidden-lg hidden-sm">	
-					<p>	BLog</p>
+				<li class="derecha  enla hidden-lg hidden-sm">	
+					<p class="enla">	BLog</p>
 				</li>
 				<li class="derecha">	
 					<p class="enla"><a href="index.html" >	Home</a></p>
@@ -194,26 +170,28 @@
 		</div>
 	</div>
  	</br>
- 	<br>	
+ 	</br>
+
 </article>
-		</section>
-		<div id="mySidenav" class="sidenav">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="#">About</a>
-				<a href="#">Services</a>
-				<a href="#">Clients</a>
-				<a href="#">Contact</a>
-		</div>
+<div class="clearfix"></div>
+<article class="descripcion" id="interes">
+				<h2 class="article-titulo">Interes personales</h2>
+				
+				<p>¡Hola! Soy Aaron Castro Desarrollador Web  especializado en desarrollo de front-end. Experimentado con todas las etapas del ciclo de desarrollo para proyectos web dinámicos. </p>
+</article>
+<div class="clearfix"></div>
+	</section>
+
 		<aside class="col-lg-2 text-center" style="position:fixed;right:0; margin-right: 10%">
-      <div  id="navigation" >
-      <div class="main-menu" id="navigation">
-          <ul class="nav nav-pills nav-stacked text-center">
-              <li><a href="#acerca"><i class="fa fa-address-card fa-3x" aria-hidden="true"></i><br>Acerca de mi </a></li>
-            <li><a href="#Skills"><i class="fa fa-area-chart fa-3x " aria-hidden="true"></i><br>Habilidades</a></li>
-            <li><a href="#experiencia"><i class="fa fa-briefcase fa-3x" aria-hidden="true"></i><br>Experiencia</a></li>
-          </ul>
-        </div>
-</div>
+      		<div  id="navigation" >
+      			<div class="main-menu" id="navigation">
+          			<ul class="nav nav-pills nav-stacked text-center">
+              			<li class="lista"><a href="#acerca"><i class="fa fa-address-card fa-3x" aria-hidden="true"></i><br>Acerca de mi </a></li>
+            			<li class="lista"><a href="#Skills"><i class="fa fa-area-chart fa-3x " aria-hidden="true"></i><br>Habilidades</a></li>
+            			<li class="lista"><a href="#experiencia"><i class="fa fa-briefcase fa-3x" aria-hidden="true"></i><br>Experiencia</a></li>
+          			</ul>
+        		</div>
+			</div>
 		</aside>
 	</main>
 <footer>
@@ -224,6 +202,14 @@
 		</div>
 	</div>    
 </footer>
+
+		<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="#">About</a>
+				<a href="#">Services</a>
+				<a href="#">Clients</a>
+				<a href="#">Contact</a>
+		</div>
 <!-- Modal master -->
 <div id="master" class="modal fade " role="dialog">
   <div class="modal-dialog modal-lg">

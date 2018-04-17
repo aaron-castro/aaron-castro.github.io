@@ -11,6 +11,49 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Tangerine" rel="stylesheet">
 
+<style type="text/css">
+  
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+
+
 </head>
 <body id="home" data-spy="scroll" data-target="#navigation" data-offset="20">
 	<nav class="efecto ">
@@ -120,7 +163,7 @@
 			<figure>	
 				<img src="img/trabajos/master.png" alt="image" class="img-portfolio">
 				<i class="ion-android-arrow-forward"></i>
-				 <h3>Master Channel <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#master">Ver más</button></h3>
+				 <h3>Master Channel <button id="master" class="btn btn-default btn-lg">Ver más</button></h3>
 				
 			</figure>
 		
@@ -129,42 +172,42 @@
 			<figure>
 				<img src="img/trabajos/f1.png" alt="image" class="img-portfolio">
 				<i class="ion-android-arrow-forward"></i>
-				 <h3>Formula 1 <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#formula">Ver más</button></h3>
+				 <h3>Formula 1 <button id="formula" class="btn btn-default btn-lg">Ver más</button></h3>
 			</figure>
 		</div>
 		<div class="freenlace  empleo  ">
 			<figure>
 				<img src="img/trabajos/proa.png" alt="image" class="img-portfolio ">
 				<i class="ion-android-arrow-forward"></i>
-				 <h3>Proa<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#proa">Ver más</button></h3>
+				 <h3>Proa<button id="proa" class="btn btn-default btn-lg">Ver más</button></h3>
 			</figure>
 		</div>
 		<div class="freenlace  empleo">
 			<figure>
 				<img src="img/trabajos/codeman.png" alt="image" class="img-portfolio">
 				<i class="ion-android-arrow-forward"></i>
-				 <h3>Codeman Company<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#codeman">Ver más</button></h3>
+				 <h3>Codeman Company<button id="codeman" class="btn btn-default btn-lg">Ver más</button></h3>
 			</figure>
 		</div>
 		<div class="empresas empleo ">
 			<figure>
 				<img src="img/trabajos/consorcio.png" alt="image" class="img-portfolio">
 				<i class="ion-android-arrow-forward"></i>
-				 <h3>Consorcio Laboro <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#consorcio">Ver más</button></h3>
+				 <h3>Consorcio Laboro <button id="consorcio" class="btn btn-default btn-lg">Ver más</button></h3>
 			</figure>
 		</div>
 		<div class=" freenlace  empleo">
 			<figure>
 				<img src="img/trabajos/kopernet.png" alt="image" class="img-portfolio">
 				<i class="ion-android-arrow-forward"></i>
-				 <h3>Kopernet <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#kopernet">Ver más</button></h3>
+				 <h3>Kopernet <button id="Kopernet" class="btn btn-default btn-lg">Ver más</button></h3>
 			</figure>
 		</div>
 		<div class="empresas empleo ">
 			<figure>
 				<img src="img/trabajos/sertec.png" alt="image" class="img-portfolio">
 				<i class="ion-android-arrow-forward"></i>
-				 <h3>Sertec <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#sertec">Ver más</button></h3>
+				 <h3>Sertec <button id="sertec" class="btn btn-default btn-lg">Ver más</button></h3>
 			</figure>
 		</div>
 	</div>
@@ -173,11 +216,7 @@
 
 </article>
 <div class="clearfix"></div>
-<article class="descripcion" id="interes">
-				<h2 class="article-titulo">Interes personales</h2>
-				
-				<p>¡Hola! Soy Aaron Castro Desarrollador Web  especializado en desarrollo de front-end. Experimentado con todas las etapas del ciclo de desarrollo para proyectos web dinámicos. </p>
-</article>
+
 <div class="clearfix"></div>
 	</section>
 
@@ -209,280 +248,292 @@
 				<a href="#">Clients</a>
 				<a href="#">Contact</a>
 		</div>
-<!-- Modal master -->
-<div id="master" class="modal fade " role="dialog">
-  <div class="modal-dialog modal-lg">
-    		<div class="modal-content">
-      		<div class="modal-header">
-       		 <button type="button" class="close" data-dismiss="modal">&times;</button>
-       		 <h4 class="modal-title lead">Master Channel</h4>
-      		</div>
-      		<div class="modal-body">
-       		 <figure class="imagen">
-       		 	<img src="img/empleos/master.png" width="400">
-       		 </figure>
-       		 <article class="contenido">
-       		 	<h2 class="text-info lead">Puesto Desempeñado:</h2>
-       		 	<p class="lead">Soporte técnico.</p>
-       		 	<p class="lead">Tiempo Laborado: Diciembre del 2017 - Febrero del 2018.</p>
-       		 	<h2 class="text-info lead">Actividades Realizadas:</h2>
-       		 	<ul class="lead">
-       		 		<li>Migración de Información de Equipos de computo.</li>
-       		 		<li>Configuraciones de Equipos De Computo .</li>
-       		 		<li>Sistema web , (exportar de datos  de formulario  en pdf ,para realizar la responsiva para las migraciones de equipos) .</li>
-       		 	</ul>
-       		 	<h2 class="text-info lead">Tecnologías Ocupadas:</h2>
-       		 	<p class="lead">Windows ,HTML 5,JAVASCRIPT, JQUERY, Sass Css, Bootstrap</p>
-       		 		 	<h2 class="text-info lead">Datos de la empresa:</h2>
-       		 		 	<ul class="lead">
-       		 		 		<li>Giro: Desarrollos Web</li>
-       		 		 		<li>Ubicación: Home Office</li>
-       		 		 		<li>Tel: :55-40585030.</li>
-       		 		 		
-       		 		 	</ul>
-       		 </article>
-      		</div>
-      		<div class="modal-footer">
-        		<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-      		</div>
-   		 </div>
-	</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   <h2 class="text-muted text-muted">  <i class="fa  fa-users fa-2x " aria-hidden="true"></i>   <embled class="text-info  lead text-center">Master Channel</embled></h2>
+    <ul class="nav nav-tabs">
+      <li  class="active"><a data-toggle="tab" href="#puesto-master">Puesto Desempeñado:</a></li>
+      <li><a data-toggle="tab" href="#actividades-master">Actividades Ralizadas</a></li>
+      <li><a data-toggle="tab" href="#tecnologia-master">Tecnologías Ocupadas:</a></li>
+      <li><a data-toggle="tab" href="#datos-master">Datos de la Empresa:</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="puesto-master" class="tab-pane fade in active">
+         <p class="lead text-muted">Soporte técnico. <br>Tiempo Laborado: Diciembre del 2017 - Febrero del 2018.</p>
+    </div>
+    <div id="actividades-master" class="tab-pane fade">
+      <ul class="lead text-muted">
+              <li>Migración de Información de Equipos de computo.</li>
+              <li>Configuraciones de Equipos De Computo .</li>
+              <li>Sistema web , (exportar de datos  de formulario  en pdf ,para realizar la responsiva para las migraciones de equipos) .</li>
+            </ul>
+    </div>
+    <div id="tecnologia-master" class="tab-pane fade">
+      <p class="lead text-muted">Windows ,HTML 5,JAVASCRIPT, JQUERY, Sass Css, Bootstrap</p>
+    </div>
+    <div id="datos-master" class="tab-pane fade">
+      <img src="img/empleos/master.png" width="200" class="img-thumbnail"><br>
+     
+      <ul class="lead text-muted">
+                  <li>Giro: Desarrollos Web</li>
+                  <li>Ubicación: Home Office</li>
+                  <li>Tel: :55-40585030.</li>
+                  
+                </ul>
+    </div>
+  </div>
+
+  </div>
 </div>
-<!-- Modalf1 -->
-<div id="formula" class="modal fade " role="dialog">
-  <div class="modal-dialog modal-lg">
-    		<div class="modal-content">
-      		<div class="modal-header">
-       		 <button type="button" class="close" data-dismiss="modal">&times;</button>
-       		 <h4 class="modal-title lead">Formula 1</h4>
-      		</div>
-      		<div class="modal-body">
-       		 <figure class="imagen">
-       		 	<img src="img/empleos/f1.png" width="400">
-       		 </figure>
-       		 <article class="contenido">
-       		 	<h2 class="text-info lead">Puesto Desempeñado:</h2>
-       		 	<p class="lead">Soporte Técnico Analista en Formúla 1.</p>
-       		 	<p class="lead text-justify">Tiempo Laborado:</p>
-       		 	<ul class="lead">
-       		 		<li>Octubre del 2017 - Noviembre del 2017 </li>
-       		 		<li>Octubre del 2016 - Noviembre del 2016</li>
-       		 		<li>Octubre del 2017 - Noviembre del 2015</li>
-       		 	</ul>
-       		 	<h2 class="text-info lead">Actividades Realizadas:</h2>
-       		 	<ul class="lead">
-       		 		<li>Configuraciones de sistemas de puntos de ventas a servidores.</li>
-       		 		<li>Consultas de ventas en el servidor.</li>
-       		 		<li>Instalación de puntos de ventas a servidores de la red.</li>
-       		 	</ul>
-       		 	<h2 class="text-info lead">Tecnologías Ocupadas:</h2>
-       		 	<p class="lead">Sql Server 2010.</p>
-       		 		 	<h2 class="text-info lead">Datos de la empresa:</h2>
-       		 		 	<ul class="lead">
-       		 		 		<li>Giro: Outsourcing.</li>
-       		 		 		<li>Ubicación: Autodromo Hermanos Rodriguez</li>
-       		 		 		<li>Tel: :55-40585030.</li>
-       		 		 	</ul>
-       		 </article>
-      		</div>
-      		<div class="modal-footer">
-        		<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-      		</div>
-   		 </div>
-	</div>
+<div id="myModaldos" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+       <h2 class="text-muted text-muted">  <i class="fa  fa-users fa-2x " aria-hidden="true"></i>   <embled class="text-info  lead text-center">Formula 1</embled></h2>
+    <ul class="nav nav-tabs">
+      <li  class="active"><a data-toggle="tab" href="#puesto-formula">Puesto Desempeñado:</a></li>
+      <li><a data-toggle="tab" href="#actividades-formula">Actividades Ralizadas</a></li>
+      <li><a data-toggle="tab" href="#tecnologia-formula">Tecnologías Ocupadas:</a></li>
+      <li><a data-toggle="tab" href="#datos-formula">Datos de la Empresa:</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="puesto-formula" class="tab-pane fade in active">
+         <p class="lead text-muted">Soporte Técnico Analista en Formúla 1.</p>
+         <p class="lead text-muted">Tiempo Laborado</p>
+         <ul class="lead text-muted">
+              <li>Octubre del 2017 - Noviembre del 2017 </li>
+              <li>Octubre del 2016 - Noviembre del 2016</li>
+              <li>Octubre del 2015 - Noviembre del 2015</li>
+            </ul>
+    </div>
+    <div id="actividades-formula" class="tab-pane fade">
+      <ul class="lead text-muted">
+              <li>Configuraciones de sistemas de puntos de ventas a servidores.</li>
+              <li>Consultas de ventas en el servidor.</li>
+              <li>Instalación de puntos de ventas a servidores de la red.</li>
+            </ul>
+    </div>
+    <div id="tecnologia-formula" class="tab-pane fade">
+     <p class="lead text-muted">Sql Server 2010.</p>
+    </div>
+    <div id="datos-formula" class="tab-pane fade">
+       <img src="img/empleos/f1.png" width="200" class="img-thumbnail"><br>
+  
+      <ul class="lead text-muted">
+                  <li>Giro: Outsourcing.</li>
+                  <li>Ubicación: Autodromo Hermanos Rodriguez</li>
+                  <li>Tel: :55-40585030.</li>
+                </ul>
+    </div>
+  </div>
+  </div>
 </div>
-<!-- Modal Proa -->
-<div id="proa" class="modal fade " role="dialog">
-  <div class="modal-dialog modal-lg">
-    		<div class="modal-content">
-      		<div class="modal-header">
-       		 <button type="button" class="close" data-dismiss="modal">&times;</button>
-       		 <h4 class="modal-title lead">Proa</h4>
-      		</div>
-      		<div class="modal-body">
-       		 <figure class="imagen">
-       		 	<img src="img/empleos/proa.png" width="400">
-       		 </figure>
-       		 <article class="contenido">
-       		 	<h2 class="text-info lead">Puesto Desempeñado:</h2>
-       		 	<p class="lead">Desarrollador Web.</p>
-       		 	<p class="lead text-justify">Tiempo Laborado: Octubre del 2017.</p>
-       		 	<h2 class="text-info lead">Actividades Realizadas:</h2>
-       		 	<ul class="lead">
-       		 		<li>Maquetación de pagina web.</li>
-       		 		<li>Login ,processo de registro de datos y exportación de informacion de la base datos e imagenes en pdf.</li>
-       		 		<li>Sistema de reporte con busqueda, filtros y exportación de datos a excel de acuerdo a los filtros o busquedas en excel./li>
-       		 	</ul>
-       		 	<h2 class="text-info lead">Tecnologías Ocupadas:</h2>
-       		 	<p class="lead">HTML 5,JAVASCRIPT,JQUERY,Json,Ajax,Sass Css, Bootstrap,Angular 2,Php,Mysql,Canvas</p>
-       		 		 	<h2 class="text-info lead">Datos de la empresa:</h2>
-       		 		 	<ul class="lead">
-       		 		 		<li>Giro: Outsourcing.</li>
-       		 		 		<li>Ubicación: Home Office.</li>
-       		 		 		<li>Tel: 55- 45966779.</li>
-       		 		 	</ul>
-       		 </article>
-      		</div>
-      		<div class="modal-footer">
-        		<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-      		</div>
-   		 </div>
-	</div>
+<div id="myModaltres" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 class="text-muted text-muted">  <i class="fa  fa-users fa-2x " aria-hidden="true"></i>   <embled class="text-info  lead text-center">Proa</embled></h2>
+   <ul class="nav nav-tabs">
+      <li  class="active"><a data-toggle="tab" href="#puesto-proa">Puesto Desempeñado:</a></li>
+      <li><a data-toggle="tab" href="#actividades-proa">Actividades Ralizadas</a></li>
+      <li><a data-toggle="tab" href="#tecnologia-proa">Tecnologías Ocupadas:</a></li>
+      <li><a data-toggle="tab" href="#datos-proa">Datos de la Empresa:</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="puesto-proa lead" class="tab-pane fade in active">
+         <p class="lead text-muted">Desarrollador Web.</p>
+         <p class="lead text-muted">Tiempo Laborado: Octubre del 2017.</p>
+    </div>
+    <div id="actividades-proa" class="tab-pane fade">
+      <ul class="lead text-muted">
+              <li>Maquetación de pagina web.</li>
+              <li>Login ,processo de registro de datos y exportación de informacion de la base datos e imagenes en pdf.</li>
+              <li>Sistema de reporte con busqueda, filtros y exportación de datos a excel de acuerdo a los filtros o busquedas en excel./li&gt;
+            </li>
+          </ul>
+    </div>
+    <div id="tecnologia-proa" class="tab-pane fade">
+      <p class="lead text-muted">HTML 5,JAVASCRIPT,JQUERY,Json,Ajax,Sass Css, Bootstrap,Angular 2,Php,Mysql,Canvas</p>
+    </div>
+    <div id="datos-proa" class="tab-pane fade">
+       <img src="img/empleos/proa.png" width="200" class="img-thumbnail"><br>
+   
+      <ul class="lead">
+                  <li>Giro: Outsourcing.</li>
+                  <li>Ubicación: Home Office.</li>
+                  <li>Tel: 55- 45966779.</li>
+                </ul>
+    </div>
+  </div>
+  </div>
 </div>
-<!-- Modal consorcio laboro -->
-<div id="consorcio" class="modal fade " role="dialog">
-  <div class="modal-dialog modal-lg">
-    		<div class="modal-content">
-      		<div class="modal-header">
-       		 <button type="button" class="close" data-dismiss="modal">&times;</button>
-       		 <h4 class="modal-title lead">Consorcio Laboro</h4>
-      		</div>
-      		<div class="modal-body">
-       		 <figure class="imagen">
-       		 	<img src="img/empleos/consorcio.png" width="400">
-       		 </figure>
-       		 <article class="contenido">
-       		 	<h2 class="text-info lead">Puesto Desempeñado:</h2>
-       		 	<p class="lead">Desarrollador Web..</p>
-       		 	<p class="lead text-justify">Tiempo Laborado: Noviembre del 2015 -Abril del 2016.</p>
-       		 	<h2 class="text-info lead">Actividades Realizadas:</h2>
-       		 	<ul class="lead">
-       		 		<li>Modificasciones a módulos de los sistemas web de la compañia desarrollando soluciones para las nuevas necesidades de la empresa.</li>
-       		 		<li>Envió masivo de mail utilizando para diferentes servicios de la empresa construcción de plantillas personalizadas para cada campaña.</li>
-       		 		<li>Sistemas de sorteo de beneficios para el personal que administra la empresa notificando por correo, llevando un processo de aceptación de terminos y condiciones para canjear su beneficio, llevando un registro en la base de datos.</li>
-       		 	</ul>
-       		 	<h2 class="text-info lead">Tecnologías Ocupadas:</h2>
-       		 	<p class="lead">PHP 4, PHP 5, MYSQL, JAVASCRIPT,JQUERY, HTML 5, CSS3, Bootstrap , Diseño Responsivo.</p>
-       		 		 	<h2 class="text-info lead">Datos de la empresa:</h2>
-       		 		 	<ul class="lead">
-       		 		 		<li>Giro: Outsourcing.</li>
-       		 		 		<li>Ubicación: Satelite, Estado de México.</li>
-       		 		 		<li>Tel: 53-93-07-00.</li>
-       		 		 	</ul>
-       		 </article>
-      		</div>
-      		<div class="modal-footer">
-        		<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-      		</div>
-   		 </div>
-	</div>
+<div id="myModalcuatro" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 class="text-muted text-muted">  <i class="fa  fa-users fa-2x " aria-hidden="true"></i>   <embled class="text-info  lead text-center">Codeman</embled></h2>
+    <ul class="nav nav-tabs">
+      <li  class="active"><a data-toggle="tab" href="#puesto-codeman">Puesto Desempeñado:</a></li>
+      <li><a data-toggle="tab" href="#actividades-codeman">Actividades Ralizadas</a></li>
+      <li><a data-toggle="tab" href="#tecnologia-codeman">Tecnologías Ocupadas:</a></li>
+      <li><a data-toggle="tab" href="#datos-codeman">Datos de la Empresa:</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="puesto-codeman" class="tab-pane fade in active">
+        <p class="lead text-muted">Desarrollador Web Freelance.</p>
+        <p class="lead text-muted">Tiempo Laborado: Enero del 2017 - Noviembre del 2017.</p>
+    </div>
+    <div id="actividades-codeman" class="tab-pane fade">
+      <ul class="lead text-muted">
+              <li>Maquetación de pagina web.</li>
+              <li>Maquetacion de diseño responsivo.</li>
+              <li>Maquetacion para aplicaciones moviles.</li>
+            </ul>
+    </div>
+    <div id="tecnologia-codeman" class="tab-pane fade">
+     <p class="lead  text-muted">HTML 5,JAVASCRIPT, JQUERY, Sass Css, Bootstrap,Angular 2,Ajax,Recaptcha</p>
+    </div>
+    <div id="datos-codeman" class="tab-pane fade">
+       <img src="img/empleos/codeman.png" width="200" class="img-thumbnail"><br>
+       
+     <ul class="lead text-muted">
+                  <li>Giro: Desarrollos Web</li>
+                  <li>Ubicación: Home Office</li>
+                  <li>Tel: :55-40585030.</li>
+                  
+                </ul>
+    </div>
+  </div>
+  </div>
 </div>
-<!-- Modal codeman -->
-<div id="codeman" class="modal fade " role="dialog">
-  <div class="modal-dialog modal-lg">
-    		<div class="modal-content">
-      		<div class="modal-header">
-       		 <button type="button" class="close" data-dismiss="modal">&times;</button>
-       		 <h4 class="modal-title lead">Codeman Company</h4>
-      		</div>
-      		<div class="modal-body">
-       		 <figure class="imagen">
-       		 	<img src="img/empleos/codeman.png" width="400">
-       		 </figure>
-       		 <article class="contenido">
-       		 	<h2 class="text-info lead">Puesto Desempeñado:</h2>
-       		 	<p class="lead">Desarrollador Web Freelance.</p>
-       		 	<p class="lead">Tiempo Laborado: Enero del 2017 - Noviembre del 2017.</p>
-       		 	<h2 class="text-info lead">Actividades Realizadas:</h2>
-       		 	<ul class="lead">
-       		 		<li>Maquetación de pagina web.</li>
-       		 		<li>Maquetacion de diseño responsivo.</li>
-       		 		<li>Maquetacion para aplicaciones moviles.</li>
-       		 	</ul>
-       		 	<h2 class="text-info lead">Tecnologías Ocupadas:</h2>
-       		 	<p class="lead">HTML 5,JAVASCRIPT, JQUERY, Sass Css, Bootstrap,Angular 2,Ajax,Recaptcha</p>
-       		 		 	<h2 class="text-info lead">Datos de la empresa:</h2>
-       		 		 	<ul class="lead">
-       		 		 		<li>Giro: Desarrollos Web</li>
-       		 		 		<li>Ubicación: Home Office</li>
-       		 		 		<li>Tel: :55-40585030.</li>
-       		 		 		
-       		 		 	</ul>
-       		 </article>
-      		</div>
-      		<div class="modal-footer">
-        		<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-      		</div>
-   		 </div>
-	</div>
+<div id="myModalcinco" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 class="text-muted text-muted">  <i class="fa  fa-users fa-2x " aria-hidden="true"></i>   <embled class="text-info  lead text-center">Consorcio Laboro</embled></h2>
+
+    <ul class="nav nav-tabs">
+      <li  class="active"><a data-toggle="tab" href="#puesto-consorcio">Puesto Desempeñado:</a></li>
+      <li><a data-toggle="tab" href="#actividades-consorcio">Actividades Ralizadas</a></li>
+      <li><a data-toggle="tab" href="#tecnologia-consorcio">Tecnologías Ocupadas:</a></li>
+      <li><a data-toggle="tab" href="#datos-consorcio">Datos de la Empresa:</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="puesto-consorcio" class="tab-pane fade in active">
+         <p class="lead text-muted">Desarrollador Web.</p>
+         <p class="lead text-muted">Tiempo Laborado: Noviembre del 2015 -Abril del 2016.</p>
+    </div>
+    <div id="actividades-consorcio" class="tab-pane fade">
+      <ul class="lead text-muted">
+              <li>Modificasciones a módulos de los sistemas web de la compañia desarrollando soluciones para las nuevas necesidades de la empresa.</li>
+              <li>Envió masivo de mail utilizando para diferentes servicios de la empresa construcción de plantillas personalizadas para cada campaña.</li>
+              <li>Sistemas de sorteo de beneficios para el personal que administra la empresa notificando por correo, llevando un processo de aceptación de terminos y condiciones para canjear su beneficio, llevando un registro en la base de datos.</li>
+            </ul>
+    </div>
+    <div id="tecnologia-consorcio" class="tab-pane fade">
+     <p class="lead">PHP 4, PHP 5, MYSQL, JAVASCRIPT,JQUERY, HTML 5, CSS3, Bootstrap , Diseño Responsivo.</p>
+    </div>
+    <div id="datos-consorcio" class="tab-pane fade">
+       <img src="img/empleos/consorcio.png" width="200" class="img-thumbnail"><br>
+      
+     <ul class="lead">
+                  <li>Giro: Outsourcing.</li>
+                  <li>Ubicación: Satelite, Estado de México.</li>
+                  <li>Tel: 53-93-07-00.</li>
+                </ul>
+    </div>
+  </div>
+  </div>
 </div>
-<!-- Modal consorcio laboro -->
-<div id="kopernet" class="modal fade " role="dialog">
-  <div class="modal-dialog modal-lg">
-    		<div class="modal-content">
-      		<div class="modal-header">
-       		 <button type="button" class="close" data-dismiss="modal">&times;</button>
-       		 <h4 class="modal-title lead">Kopernet</h4>
-      		</div>
-      		<div class="modal-body">
-       		 <figure class="imagen">
-       		 	<img src="img/empleos/kopernet.png" width="400">
-       		 </figure>
-       		 <article class="contenido">
-       		 	<h2 class="text-info lead">Puesto Desempeñado:</h2>
-       		 	<p class="lead">Desarrollador Web..</p>
-       		 	<p class="lead text-justify">Tiempo Laborado:Febrero del 2017 - Marzo del 2017.</p>
-       		 	<h2 class="text-info lead">Actividades Realizadas:</h2>
-       		 	<ul class="lead">
-       		 		<li>Obtención y validación de ubicación y check in para realizar registros .</li>
-       		 		<li>Monitorización de procesos e informar status que se encuentran o faltan.</li>
-       		 		<li>Validación de cambio de contraseña para el login.</li>
-       		 	</ul>
-       		 	<h2 class="text-info lead">Tecnologías Ocupadas:</h2>
-       		 	<p class="lead">HTML 5,JAVASCRIPT, JQUERY, CSS3, Bootstrap,Angular 3.5</p>
-       		 		 	<h2 class="text-info lead">Datos de la empresa:</h2>
-       		 		 	<ul class="lead">
-       		 		 		<li>Giro: Outsourcing.</li>
-       		 		 		<li>Ubicación:  Home Office.</li>
-       		 		 		<li>Tel:55- 53172783.</li>
-       		 		 	</ul>
-       		 </article>
-      		</div>
-      		<div class="modal-footer">
-        		<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-      		</div>
-   		 </div>
-	</div>
+<div id="myModalseis" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 class="text-muted text-muted">  <i class="fa  fa-users fa-2x " aria-hidden="true"></i>   <embled class="text-info  lead text-center">Kopernet </embled></h2>
+    <ul class="nav nav-tabs">
+      <li  class="active"><a data-toggle="tab" href="#puesto-kopernet">Puesto Desempeñado:</a></li>
+      <li><a data-toggle="tab" href="#actividades-kopernet">Actividades Ralizadas</a></li>
+      <li><a data-toggle="tab" href="#tecnologia-kopernet">Tecnologías Ocupadas:</a></li>
+      <li><a data-toggle="tab" href="#datos-kopernet">Datos de la Empresa:</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="puesto-kopernet" class="tab-pane fade in active">
+         <p class="lead text-muted">Desarrollador Web.</p>
+         <p class="lead text-muted">Tiempo Laborado:Febrero del 2017 - Marzo del 2017.</p>
+    </div>
+    <div id="actividades-kopernet" class="tab-pane fade">
+      <ul class="lead">
+              <li>Obtención y validación de ubicación y check in para realizar registros .</li>
+              <li>Monitorización de procesos e informar status que se encuentran o faltan.</li>
+              <li>Validación de cambio de contraseña para el login.</li>
+            </ul>
+    </div>
+    <div id="tecnologia-kopernet" class="tab-pane fade">
+      <p class="lead">HTML 5,JAVASCRIPT, JQUERY, CSS3, Bootstrap,Angular 3.5</p>
+    </div>
+    <div id="datos-kopernet" class="tab-pane fade">
+       <img src="img/empleos/kopernet.png" width="200" class="img-thumbnail"><br>
+          
+      <ul class="lead">
+                  <li>Giro: Outsourcing.</li>
+                  <li>Ubicación:  Home Office.</li>
+                  <li>Tel:55- 53172783.</li>
+                </ul>
+    </div>
+  </div>
+  </div>
 </div>
-<!-- Modal Sertec -->
-<div id="sertec" class="modal fade " role="dialog">
-  <div class="modal-dialog modal-lg">
-    		<div class="modal-content">
-      		<div class="modal-header">
-       		 <button type="button" class="close" data-dismiss="modal">&times;</button>
-       		 <h4 class="modal-title lead">Sertec</h4>
-      		</div>
-      		<div class="modal-body">
-       		 <figure class="imagen">
-       		 	<img src="img/empleos/sertec.png" width="400">
-       		 </figure>
-       		 <article class="contenido">
-       		 	<h2 class="text-info lead">Puesto Desempeñado:</h2>
-       		 	<p class="lead">Desarrollador Web..</p>
-       		 	<p class="lead text-justify">Marzo del 2015 - Septiembre del 2015..</p>
-       		 	<h2 class="text-info lead">Actividades Realizadas:</h2>
-       		 	<ul class="lead">
-       		 		<li>Modificación de módulos de los sistemas Web de la compañia. .</li>
-       		 		<li>Amplio Manejo de base de datos para generar reportes de acuerdo a las necesidades de cada departamento.</li>
-       		 		<li>Validaciones de campos</li>
-       		 	</ul>
-       		 	<h2 class="text-info lead">Tecnologías Ocupadas:</h2>
-       		 	<p class="lead">PHP 5,HTML 5,MYSQL, JQUERY .</p>
-       		 		 	<h2 class="text-info lead">Datos de la empresa:</h2>
-       		 		 	<ul class="lead">
-       		 		 		<li>Giro: Gestion de Cobranza.</li>
-       		 		 		<li>Ubicación:  SERTEC, Avenida Benjamín Franklin No. 98, Planta Baja, Cuauhtémoc, Hipódromo, 11800 Ciudad de México.
-Tel: 01-55-52-78-43-27.</li>
-       		 		 		<li>Tel:01-55-52-78-43-27..</li>
-       		 		 	</ul>
-       		 </article>
-      		</div>
-      		<div class="modal-footer">
-        		<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-      		</div>
-   		 </div>
-	</div>
+<div id="myModalsiete" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 class="text-muted text-muted">  <i class="fa  fa-users fa-2x " aria-hidden="true"></i>   <embled class="text-info  lead text-center">Sertec</embled></h2>
+   <ul class="nav nav-tabs">
+      <li  class="active"><a data-toggle="tab" href="#puesto-sertec">Puesto Desempeñado:</a></li>
+      <li><a data-toggle="tab" href="#actividades-sertec">Actividades Ralizadas</a></li>
+      <li><a data-toggle="tab" href="#tecnologia-sertec">Tecnologías Ocupadas:</a></li>
+      <li><a data-toggle="tab" href="#datos-sertec">Datos de la Empresa:</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="puesto-sertec" class="tab-pane fade in active">
+         <p class="lead text-muted">Soporte técnico. <br>Tiempo Laborado: Diciembre del 2017 - Febrero del 2018.</p>
+    </div>
+    <div id="actividades-sertec" class="tab-pane fade">
+      <ul class="lead text-muted">
+              <li>Migración de Información de Equipos de computo.</li>
+              <li>Configuraciones de Equipos De Computo .</li>
+              <li>Sistema web , (exportar de datos  de sertecrio  en pdf ,para realizar la responsiva para las migraciones de equipos) .</li>
+            </ul>
+    </div>
+    <div id="tecnologia-sertec" class="tab-pane fade">
+      <p class="lead text-muted">Windows ,HTML 5,JAVASCRIPT, JQUERY, Sass Css, Bootstrap</p>
+    </div>
+    <div id="datos-sertec" class="tab-pane fade">
+       <img src="img/empleos/sertec.png" width="200" class="img-thumbnail"><br>
+          
+      <ul class="lead text-muted">
+                  <li>Giro: Desarrollos Web</li>
+                  <li>Ubicación: Home Office</li>
+                  <li>Tel: :55-40585030.</li>
+                  
+                </ul>
+    </div>
+  </div>
+  </div>
 </div>
+
 		
 <!--=======SCRIPTS============-->
 
@@ -535,6 +586,102 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+// Get the modal
+var modal = document.getElementById('myModal');
+var modaldos = document.getElementById('myModaldos');
+var modaltres = document.getElementById('myModaltres');
+var modalcuatro = document.getElementById('myModalcuatro');
+var modalcinco= document.getElementById('myModalcinco');
+var modalseis= document.getElementById('myModalseis');
+var modalsiete= document.getElementById('myModalsiete');
+// Get the button that opens the modal
+var btn = document.getElementById("master");
+var btndos = document.getElementById("formula");
+var btntres = document.getElementById("proa");
+var btncuatro = document.getElementById("codeman");
+var btncinco= document.getElementById("consorcio");
+var btnseis= document.getElementById("Kopernet");
+var btnsiete= document.getElementById("sertec");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var spandos = document.getElementsByClassName("close")[1];
+var spantres = document.getElementsByClassName("close")[2];
+var spancuatro = document.getElementsByClassName("close")[3];
+var spancinco = document.getElementsByClassName("close")[4];
+var spanseis= document.getElementsByClassName("close")[5];
+var spansiete= document.getElementsByClassName("close")[6];
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+btndos.onclick = function() {
+    modaldos.style.display = "block";
+
+}
+btntres.onclick = function() {
+    modaltres.style.display = "block";
+}
+btncuatro.onclick = function() {
+    modalcuatro.style.display = "block";
+}
+
+btncinco.onclick = function() {
+    modalcinco.style.display = "block";
+}
+btnseis.onclick = function() {
+    modalseis.style.display = "block";
+}
+btnsiete.onclick = function() {
+    modalsiete.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+spandos.onclick = function() {
+    modaldos.style.display = "none";
+}
+spantres.onclick = function() {
+    modaltres.style.display = "none";
+}
+spancuatro.onclick = function() {
+    modalcuatro.style.display = "none";
+}
+spancinco.onclick = function() {
+    modalcinco.style.display = "none";
+}
+spanseis.onclick = function() {
+    modalseis.style.display = "none";
+}
+spansiete.onclick = function() {
+    modalsiete.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    if (event.target == modaldos) {
+        modaldos.style.display = "none";
+    }
+      if (event.target == modaltres) {
+        modaltres.style.display = "none";
+    }
+  if (event.target == modalcuatro) {
+        modalcuatro.style.display = "none";
+    }
+      if (event.target == modalcinco) {
+        modalcinco.style.display = "none";
+    }
+      if (event.target == modalseis) {
+        modalseis.style.display = "none";
+    }
+          if (event.target == modalsiete) {
+        modalsiete.style.display = "none";
+    }
+}
+
 </script>
 </body>
 </html>

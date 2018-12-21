@@ -181,7 +181,7 @@ app.controller('datos', function ($scope, $http, $timeout) {
       duracion:'Octubre del 2018 - Noviembre del 2018.',
       empresa:"CIE/ Evento de Formula Uno",
       puesto:"Soporte Técnico Analista-Clonador ",
-      funcionUno:"Instalación de Equipos Computacionales",
+      funcionUno:"Instalación de Equipos Computacionales/Clonación de Equipos",
       funcionDos:"Consultas de ventas en el servidor.",
       funcionTres:"Desarollar sistema de registro de avances de Colocacion e instalación  De Equipos  Computacionales",
       logro:"Realizar sistema de registro, se tuvo un control de estatus  de equipos computacionales ",

@@ -185,7 +185,7 @@ app.controller('datos', function ($scope, $http, $timeout) {
       funcionDos:"Consultas de ventas en el servidor.",
       funcionTres:"Desarollar sistema de registro de avances de Colocacion e instalación  De Equipos  Computacionales",
       logro:"Realizar sistema de registro, se tuvo un control de estatus  de equipos computacionales ",
-      tecnologia:"HTML 5,JAVASCRIPT,Angular, JQUERY, Sass Css, Bootstrap",
+      tecnologia:"HTML 5,JAVASCRIPT,Angular, JQUERY, Sass Css, Bootstrap,Acronis,"
       empresaGiro:"Outsourcing.",
       empresaUbicacion:"Autodromo Hermanos Rodriguez",
       empresaTel:"55-40585030",

@@ -172,7 +172,7 @@ app.controller('datos', function ($scope, $http, $timeout) {
       tecnologia:"HTML 5,JAVASCRIPT,Angular, JQUERY, Sass Css, Bootstrap",
       empresaGiro:"Venta de playeras , uniforme y camisas bordados",
       empresaUbicacion:"Home Officce",
-      empresaTel:"01-5555-623406",
+      empresaTel:"55-41337810",
 
     },
     {

@@ -165,7 +165,7 @@ app.controller('datos', function ($scope, $http, $timeout) {
       duracion:"Septiembre del 2018- Noviembre del 2018",
       empresa:"Nuestro uniforme",
       puesto:"Desarrollador Web ",
-      funcionUno:"Desarrollar Sistema de carrito de compras  de ",
+      funcionUno:"Desarrollar Sistema de carrito de compras   ",
       funcionDos:"Maquetación de pagina web, Analisis y Diseño de base de datos",
       funcionTres:"EDitar imagenes",
       logro:"Editar Imagenes,Terminar en tiempo y forma la página Web",

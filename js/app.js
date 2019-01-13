@@ -61,7 +61,7 @@ app.controller('datos', function ($scope, $http, $timeout) {
       funcionDos:"Se Reailizo Mailing,  crear diseños para diferentes campañas de la empresa para sus clientes.",
       funcionTres:"Soporte Técnico a Equipos Computacionales",
       logro:"Realizar las campañas de Mailing, teniendo un gran  impacto  en los procesos de clientes ",
-      tecnologia:"PHP 5,HTML 5,MYSQL, JQUERY."
+      tecnologia:"PHP 5,HTML 5,MYSQL, JQUERY.",
       empresaGiro:"Compra y Venta de Equipos Industriales ",
       empresaUbicacion:"San Juan ixtacala,Tlalnepantla, Edo. de México  ",
       empresaTel:"55-28981134",

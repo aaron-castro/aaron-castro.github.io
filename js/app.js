@@ -132,7 +132,7 @@ app.controller('datos', function ($scope, $http, $timeout) {
     {
       idTrabajo: 'j',
       year: '2017',
-      duracion:'Diciembre del 2017- Febrero del 2018',
+      duracion:'Diciembre del 2017- Marzo del 2018',
       empresa:"Nadro",
       puesto:"Soporte Técnico Analista   ",
       funcionUno:"Migración de Información de Equipos de cómputo",

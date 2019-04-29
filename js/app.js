@@ -197,7 +197,7 @@ app.controller('datos', function ($scope, $http, $timeout) {
       duracion:'febrero del 2019 - Abril del 2019.',
       empresa:"Kode/Tv Azteca",
       puesto:"Desarrollador Web ",
-      funcionUno:"Reutilización y adaptación de módulo de sistema web de videos,Reutilización y adaptación modificaciones de web servicies.",
+      funcionUno:"Reutilización y adaptación de módulo de sistema web de videos.</br>Reutilización y adaptación modificaciones de web servicies.",
       funcionDos:"Reutilización y adaptación de código de aplicación de escritorio con interacción de paginá web (web services),envió de archivos de video y texto a un servidor, la aplicación fue desarrollado para el sistema operativos Windows y Mac.",
       funcionTres:"Análisis y creación de Tablas ,Procedimientos Almacenados en Oracle",
       logro:"Conocer varios lenguajes de programación y utilizar en conjunto aplicaciones de escritorio y aplicaciones web ",

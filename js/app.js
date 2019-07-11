@@ -215,7 +215,7 @@ app.controller('datos', function ($scope, $http, $timeout) {
       puesto:"Desarrollador Web ",
       funcionUno:"Desarrollo de página web",
       funcionDos:"Diseño Responsivo",
-      funcionTres:"Administrar Redes Sociales",
+      funcionTres:"Sistema de Mailing",
       logro:"integrar api de whatsaap y manejar redes sociales ",
       tecnologia:"HTML 5,Javascript,Jquery,Php, Bootstrap,Mysql,Angular 1,6 ",
       empresaGiro:"Venta y reparación de patines hidráulicos",

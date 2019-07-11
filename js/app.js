@@ -208,21 +208,6 @@ app.controller('datos', function ($scope, $http, $timeout) {
 
     },
    {
-      idTrabajo: 'n',
-      year: '2019',
-      duracion:'febrero del 2019 - Abril del 2019.',
-      empresa:"Kode/Tv Azteca",
-      puesto:"Desarrollador Web Javascript",
-      funcionUno:"Reutilización y adaptación de módulo de sistema web de videos y modificaciones de web servicies.",
-      funcionDos:"Reutilización y adaptación de código de aplicación de escritorio con interacción de paginá web (web services),envió de archivos de video y texto a un servidor, la aplicación fue desarrollado para el sistema operativos Windows y Mac.",
-      funcionTres:"Análisis y creación de Tablas ,Procedimientos Almacenados en Oracle",
-      logro:"Conocer varios lenguajes de programación y utilizar en conjunto aplicaciones de escritorio y aplicaciones web ",
-      tecnologia:"HTML 5,JavaScript, C#,Nhibérnate ,Oracle,Java ",
-      empresaGiro:"medios de comunicación",
-      empresaUbicacion:"Periférico Sur #4121,Col. Fuentes del Pedregal, Tlalpan,",
-      empresaTel:"55-47341566-67",
-
-    }, {
       idTrabajo: 'o',
       year: '2019',
       duracion:'Junio del 2019 - Julio del 2019.',

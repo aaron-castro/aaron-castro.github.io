@@ -123,7 +123,7 @@
 			<div class="col-lg-12 well  well-sm">
 
 				<label>Filtrar Por año:</label>
-				<select type="text" ng-model="dia" ng-change="filter()" placeholder="Filter" class="form-control" />
+				<select type="text" ng-model="dia.year" ng-change="filter()" placeholder="Filter" class="form-control" />
 				<option value="{{i}}" ng-repeat="i in [2019,2018,2017,2016,2015]">{{i}}</option>
 				<option value="">Sin filtros</option>
 				</select>
@@ -131,8 +131,8 @@
 			<div class="row"></div>
 			<ul class="timeline  ">
 
-				<li ng-repeat="empleo in trabajos|orderBy:'-idTrabajo'| filter:dia " >
-					<span class="idtrabajo ">{{empleo.year}} {{empleo.idTrabajo}}</span>
+				<li ng-repeat="empleo in trabajos | orderBy:'idTrabajo':true| filter:dia  " >
+					<span class="idtrabajo ">{{empleo.idTrabajo}}{{empleo.year}} </span>
 					<h3 class="animated rubberBand p empleo ">{{empleo.empresa|uppercase}}</h3>
 					
 					<p class="lead p duracion ">{{empleo.duracion|uppercase}}</p>
@@ -142,6 +142,7 @@
 						<li class="active">
 							<a href="#tab_default_1-{{empleo.idTrabajo}}" data-toggle="tab">
 							PUESTO </a>
+
 						</li>
 						<li>
 							<a href="#tab_default_2-{{empleo.idTrabajo}}" data-toggle="tab">
@@ -163,6 +164,9 @@
 					<div class="tab-content">
 						<div class="tab-pane active" id="tab_default_1-{{empleo.idTrabajo}}">
 							<p class=" lead p puesto ">{{empleo.puesto|uppercase}}</p>
+							<div ng-if="empleo.url!=''">
+								<a href="{{empleo.url}}" class="btn link">{{empleo.url}}</a>
+							</div>
 
 							
 						</div>

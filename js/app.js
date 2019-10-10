@@ -2,10 +2,10 @@
 var app = angular.module('myApp', []);
 
 app.controller('datos', function ($scope, $http, $timeout) {
-
+``
  $scope.trabajos = [
     {
-      idTrabajo: 'a',
+      idTrabajo: 1,
       year: '2015',
       duracion:'Marzo  del 2015- Septiembre  del 2015 .',
       empresa:"sertec.",
@@ -18,10 +18,11 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Gestion de Cobranza.",
       empresaUbicacion:"Avenida Benjamín Franklin No. 98, Planta Baja, Cuauhtémoc, Hipódromo, 11800. ",
       empresaTel:"01-55-52-78-43-27",
+      url:""
 
     },
      {
-      idTrabajo: 'b',
+      idTrabajo: 2,
       year: '2015',
       duracion:'Octubre del 2015 - Noviembre del 2015.',
       empresa:"CIE/ Evento de Formula Uno",
@@ -34,10 +35,11 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Outsourcing.",
       empresaUbicacion:"Autodromo Hermanos Rodriguez",
       empresaTel:"55-40585030",
+      url:" "
 
     },  
         {
-      idTrabajo: 'c',
+      idTrabajo: 3,
       year: '2015',
       duracion:'Noviembre del 2015 -Abril del 2016.',
       empresa:"Consorcio Laboro.",
@@ -50,9 +52,10 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Outsourcing.",
       empresaUbicacion:"Satelite, Estado de México.",
       empresaTel:"53-93-07-00",
+       url:" "
 
     }, {
-      idTrabajo: 'd',
+      idTrabajo: 4,
       year: '2016',
       duracion:'Junio del 2016- Septiembre del 2016',
       empresa:"Ld Suministros Industriales",
@@ -65,9 +68,10 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Compra y Venta de Equipos Industrialesriales ",
       empresaUbicacion:"San Juan ixtacala,Tlalnepantla, Edo. de México  ",
       empresaTel:"55-28981134",
+       url:" "
 
     }, {
-      idTrabajo: 'e',
+      idTrabajo: 5,
       year: '2016',
       duracion:'Octubre del 2016 - Noviembre del 2016.',
       empresa:"CIE/ Evento de Formula Uno",
@@ -80,10 +84,11 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Outsourcing.",
       empresaUbicacion:"Autodromo Hermanos Rodriguez",
       empresaTel:"55-40585030",
+       url:" "
 
     },
     {
-      idTrabajo: 'f',
+      idTrabajo: 6,
       year: '2017',
       duracion:'Enero del 2017 - Agosto del 2017.',
       empresa:"Codeman",
@@ -96,11 +101,12 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:" Desarrollos Web",
       empresaUbicacion:"Pedregal ",
       empresaTel:"55-40585030",
+       url:" "
 
     }, 
     
     {
-      idTrabajo: 'h',
+      idTrabajo: 7,
       year: '2017',
       duracion:'Febrero del 2017 - Marzo del 2017.',
       empresa:"kopernet",
@@ -113,9 +119,10 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:" Desarrollos Web",
       empresaUbicacion:"Home Officce ",
       empresaTel:"55- 53172783",
+       url:" "
     },
     {
-      idTrabajo: 'i',
+      idTrabajo: 8,
       year: '2017',
       duracion:'Octubre del 2017 - Noviembre del 2017',
       empresa:"CIE/ Evento de Formula Uno",
@@ -128,9 +135,10 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Outsourcing",
       empresaUbicacion:"Autodromo Hermanos Rodriguez",
       empresaTel:"55-40585030",
+       url:" "
     },
     {
-      idTrabajo: 'j',
+      idTrabajo: 9,
       year: '2017',
       duracion:'Diciembre del 2017- Marzo del 2018',
       empresa:"Nadro",
@@ -143,9 +151,10 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Outsourcing para proyectos de Tics",
       empresaUbicacion:"Santa Fe",
       empresaTel:"55-40585030.",
+       url:" "
     },
     {
-      idTrabajo: 'k',
+      idTrabajo: 10,
       year: '2018',
       duracion:' Marzo del 2018- Agosto  del 2018',
       empresa:"Parroquia San Felipe De Jesus",
@@ -158,9 +167,10 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Religioso",
       empresaUbicacion:"Satelite,Circuito Economista ",
       empresaTel:"01-5555-623406",
+       url:" "
     },
     {
-      idTrabajo: 'l',
+      idTrabajo: 11,
       year: '2018',
       duracion:"Septiembre del 2018- Noviembre del 2018",
       empresa:"Nuestro uniforme",
@@ -173,10 +183,11 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Venta de playeras , uniforme y camisas bordados",
       empresaUbicacion:"Home Officce",
       empresaTel:"55-41337810",
+      url:"https://nuestrouniforme.com/"
 
     },
     {
-      idTrabajo: 'm',
+      idTrabajo: 12,
       year: '2018',
       duracion:'Octubre del 2018 - Noviembre del 2018.',
       empresa:"CIE/ Evento de Formula Uno",
@@ -189,10 +200,11 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Outsourcing.",
       empresaUbicacion:"Autodromo Hermanos Rodriguez",
       empresaTel:"55-40585030",
+       url:""
 
     },
       {
-      idTrabajo: 'n',
+      idTrabajo: 13,
       year: '2019',
       duracion:'febrero del 2019 - Abril del 2019.',
       empresa:"Kode/Tv Azteca",
@@ -205,10 +217,11 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"medios de comunicación",
       empresaUbicacion:"Periférico Sur #4121,Col. Fuentes del Pedregal, Tlalpan,",
       empresaTel:"55-47341566-67",
+      url:""
 
     },
    {
-      idTrabajo: 'o',
+      idTrabajo: 14,
       year: '2019',
       duracion:'Junio del 2019 - Julio del 2019.',
       empresa:"Patines Hidraulicos Servi-Carrh",
@@ -221,9 +234,26 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Venta y reparación de patines hidráulicos",
       empresaUbicacion:"Avenida Jesús Reyes Heroles 11-B, Pueblo San Juan Ixtacala, 54160 Tlalnepantla de Baz, Méx.",
       empresaTel:"55-46061768",
+      url:"https://www.patineshidraulicoservi-carrh.com/"
 
     },
-   
+      {
+      idTrabajo: 15,
+      year: '2019',
+      duracion:'Agosto del 2019 - Septiembredel 2019.',
+      empresa:"CysAmd/Senado de la República",
+      puesto:"Soporte Técnico ",
+      funcionUno:"Migración de equipos Computacionales y configuración de Equipo e impresoras.",
+      funcionDos:"",
+      funcionTres:"",
+      logro:"Terminar en tiempo y forma las migraciones",
+      tecnologia:"windows,hp , lexmark",
+      empresaGiro:"Gubenamental",
+      empresaUbicacion:"Paseo d ela reforma",
+      empresaTel:"55 5535 3992",
+      url:""
+
+    },
 
   ];
 

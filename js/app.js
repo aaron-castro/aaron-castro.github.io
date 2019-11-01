@@ -240,7 +240,7 @@ app.controller('datos', function ($scope, $http, $timeout) {
       {
       idTrabajo: 15,
       year: '2019',
-      duracion:'Agosto del 2019 - Septiembredel 2019.',
+      duracion:'Agosto del 2019 - Septiembre del 2019.',
       empresa:"CysAmd/Senado de la República",
       puesto:"Soporte Técnico ",
       funcionUno:"Migración de equipos Computacionales y configuración de Equipo e impresoras.",
@@ -251,6 +251,24 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Gubenamental",
       empresaUbicacion:"Paseo d ela reforma",
       empresaTel:"55 5535 3992",
+      url:""
+
+    },
+  
+      {
+      idTrabajo: 16,
+      year: '2019',
+      duracion:'Octubre del 2019 - Noviembre del 2019.',
+      empresa:"Adeldex/Evento de formula una",
+      puesto:"Desarrollador Web / Clonador ",
+      funcionUno:"Desarrollo de página Web  de registro actividades de colocación  de equipo y clonación de Equipos",
+      funcionDos:"Crear imagenes para clonación con acronis y  dar capacitación para la utilización del software.",
+      funcionTres:"",
+      logro:"Supervisar y capacitar al equipo de trabajo",
+      tecnologia:"Html5, Css3, Bootstrap 3.7,Javascript, Angular 1.6,Jquery,Mysql,Acronis",
+      empresaGiro:"Outsourcing",
+      empresaUbicacion:"Autodromo Hermanos Rodriguez",
+      empresaTel:"55-40585030",
       url:""
 
     },

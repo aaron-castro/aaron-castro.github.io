@@ -272,7 +272,40 @@ app.controller('datos', function ($scope, $http, $timeout) {
       url:""
 
     },
+   {
+      idTrabajo: 17,
+      year: '2020',
+      duracion:'Febrero del 2020 - Marzo del 2020.',
+      empresa:"Tecnoquo",
+      puesto:"Desarrollador Web  ",
+      funcionUno:"Análisis de requerimientos",
+      funcionDos:"Maquetación Web",
+      funcionTres:"Diseño Ui Y Diseño Ux",
+      logro:"Diseñar el prototipo en psd",
+      tecnologia:"Html5, Css3, Bootstrap 3.7,Javascript, Angular 1.6,Jquery,Photoshop",
+      empresaGiro:"Venta de equipos Computacionales",
+      empresaUbicacion:"",
+      empresaTel:"55 7248-8014",
+      url:"http://technoquo.com.mx/"
 
+    },
+ {
+      idTrabajo: 18,
+      year: '2020',
+      duracion:'Abril del 2020 - Junio del 2020.',
+      empresa:"PATINES HIDRAULICOS SERVI-CARRH",
+      puesto:"Desarrollador Web  ",
+      funcionUno:"Análisis de requerimientos de Rediseño",
+      funcionDos:"Diseño Ui Y Diseño Ux",
+      funcionTres:"Cambios de estilos y Funciones dinamicos",
+      logro:"Diseñar el prototipo en psd",
+      tecnologia:"Html5, Css3, Bootstrap 3.7,Javascript,Photoshop",
+      empresaGiro:"Patines Hidraulicos",
+      empresaUbicacion:"",
+      empresaTel:"",
+      url:"http://patineshidraulicoservi-carrh.com/"
+
+    },
   ];
 
 });

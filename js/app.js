@@ -234,7 +234,7 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Venta y reparación de patines hidráulicos",
       empresaUbicacion:"Avenida Jesús Reyes Heroles 11-B, Pueblo San Juan Ixtacala, 54160 Tlalnepantla de Baz, Méx.",
       empresaTel:"55-46061768",
-      url:"https://www.patineshidraulicoservi-carrh.com/"
+      url:"https://hidraulicaservicarrh.com/"
 
     },
       {
@@ -303,7 +303,7 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Patines Hidraulicos",
       empresaUbicacion:"",
       empresaTel:"",
-      url:"http://patineshidraulicoservi-carrh.com/"
+      url:"https://hidraulicaservicarrh.com/"
 
     },
   ];

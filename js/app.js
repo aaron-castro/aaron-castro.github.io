@@ -234,7 +234,7 @@ app.controller('datos', function ($scope, $http, $timeout) {
       empresaGiro:"Venta y reparación de patines hidráulicos",
       empresaUbicacion:"Avenida Jesús Reyes Heroles 11-B, Pueblo San Juan Ixtacala, 54160 Tlalnepantla de Baz, Méx.",
       empresaTel:"55-46061768",
-      url:"https://hidraulicaservicarrh.com/"
+      url:"https://hidraulicaservicarrh.mx/"
 
     },
       {
@@ -292,20 +292,22 @@ app.controller('datos', function ($scope, $http, $timeout) {
  {
       idTrabajo: 18,
       year: '2020',
-      duracion:'Abril del 2020 - Junio del 2020.',
+      duracion:'Abril del 2020 - Junio del 2021.',
       empresa:"PATINES HIDRAULICOS SERVI-CARRH",
       puesto:"Desarrollador Web  ",
       funcionUno:"Análisis de requerimientos de Rediseño",
-      funcionDos:"Diseño Ui Y Diseño Ux",
-      funcionTres:"Cambios de estilos y Funciones dinamicos",
+      funcionDos:"Diseño Ui Y Diseño Ux,Cambios de estilos y Funciones dinamicos",
+      funcionTres:"Reparación Y Mantenimiento Computacional",
       logro:"Diseñar el prototipo en psd",
-      tecnologia:"Html5, Css3, Bootstrap 3.7,Javascript,Photoshop",
-      empresaGiro:"Patines Hidraulicos",
-      empresaUbicacion:"",
-      empresaTel:"",
-      url:"https://hidraulicaservicarrh.com/"
+      tecnologia:"Html5, Css3, Bootstrap 3.7,Javascript,Photoshop, Windows",
+     empresaGiro:"Venta y reparación de patines hidráulicos",
+      empresaUbicacion:"Avenida Jesús Reyes Heroles 11-B, Pueblo San Juan Ixtacala, 54160 Tlalnepantla de Baz, Méx.",
+      empresaTel:"55-46061768",
+      url:"https://hidraulicaservicarrh.mx/"
 
     },
+  
+  
   ];
 
 });

@@ -259,7 +259,7 @@ app.controller('datos', function ($scope, $http, $timeout) {
       idTrabajo: 16,
       year: '2019',
       duracion:'Octubre del 2019 - Noviembre del 2019.',
-      empresa:"Cie/Evento de formula una",
+      empresa:"Cie/Evento de Formula Uno",
       puesto:"Desarrollador Web / Clonador ",
       funcionUno:"Desarrollo de página Web  de registro actividades de colocación  de equipo y clonación de Equipos",
       funcionDos:"Crear imagenes para clonación con acronis y  dar capacitación para la utilización del software.",

@@ -293,7 +293,7 @@ app.controller('datos', function ($scope, $http, $timeout) {
       idTrabajo: 18,
       year: '2020',
       year:'2021',
-      duracion:'Abril del 2020 - Febrero del 2022.',
+      duracion:'Abril del 2020 - Febrero del 2022',
       empresa:"PATINES HIDRAULICOS SERVI-CARRH",
       puesto:"Desarrollador Web  ",
       funcionUno:"Análisis de requerimientos de Rediseño",
